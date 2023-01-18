@@ -1,5 +1,7 @@
 .header{
     font-size: 3.5rem;
+    /*background: red;*/
+
 }
 
 .header::after{
@@ -42,5 +44,13 @@
         top:-10px;
 
     }
+
+}
+.desc{
+    /*color: #0087ca;*/
+    margin-top: -20px;
+    display: flex;
+    color: #757677;
+
 
 }

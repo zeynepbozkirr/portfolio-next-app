@@ -1,0 +1,7 @@
+.project{
+    height: 500px;
+    /*padding-left: 10%;*/
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}

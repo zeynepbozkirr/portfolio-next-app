@@ -1,0 +1,44 @@
+.footer{
+    padding-top: 80px;
+    /*height: 500px;*/
+    display: flex;
+    justify-content: center;
+
+
+
+}
+.item{
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    font-weight: 600;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    color: #757677;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
+}
+.item a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.icon{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+}

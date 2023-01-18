@@ -88,20 +88,20 @@
 }
 
 .Link{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.5s;
+    /*position: relative;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*background: #fff;*/
+    /*border-radius: 50%;*/
+    /*cursor: pointer;*/
+    /*transition: 0.5s;*/
 
 }
 .Link:hover{
-    width: 80px;
+    /*width: 80px;*/
 }
 /*.Link::before{*/
 /*    content: "";*/
@@ -129,9 +129,9 @@
 }
 
 .icon:hover{
-    transform: scale(0);
-    color: #fff;
-    transition-delay: 0s;
+    /*transform: scale(0);*/
+    /*color: #fff;*/
+    /*transition-delay: 0s;*/
 }
 .div{
 }

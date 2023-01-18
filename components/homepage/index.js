@@ -1,13 +1,15 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./home.module.css";
 import { Button, Col, Row, Typography } from "antd";
 import Contact from "./contact";
 
-const HomeComp = () => {
+// eslint-disable-next-line react/display-name
+const HomeComp = forwardRef((props, ref) => {
   const { Paragraph, Text } = Typography;
+
   return (
     <>
-      <Row className={styles.home}>
+      <Row ref={ref} className={styles.home}>
         <Col className={styles.homeAbout} style={{}} offset={1} span={16}>
           <Text className={styles.name}>Bekir Yetim</Text>
           <Text className={styles.job}> FRONTEND DEVELOPER</Text>
@@ -30,6 +32,6 @@ const HomeComp = () => {
       </Row>
     </>
   );
-};
+});
 
 export default HomeComp;

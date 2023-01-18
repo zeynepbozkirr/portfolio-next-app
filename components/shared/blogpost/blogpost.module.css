@@ -1,0 +1,43 @@
+.blogPost{
+
+}
+.item{
+}
+
+.date{
+    margin-bottom: -10px;
+    padding-top:50px;
+    display: flex;
+    color: #757677;
+
+}
+.line{
+    /*display: block;*/
+    /*width: 2.3rem;*/
+    /*height: 0.1rem;*/
+    /*background-color: rgba(25, 27, 29, 0.6);*/
+    /*margin-top: 0.6rem;*/
+}
+.title{
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.desc{
+    display: flex;
+    color: #757677;
+    padding-bottom: 30px;
+}
+
+.buttonCol{
+    display: flex;
+    justify-content: end;
+    align-items:  end;
+}
+.button{
+   border: none;
+    font-weight: bold;
+    font-size: 12px;
+
+}

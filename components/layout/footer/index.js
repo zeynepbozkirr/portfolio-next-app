@@ -1,24 +1,29 @@
-import React from 'react';
-import styles from "../../../styles/Home.module.css";
-import Image from "next/image";
+import React from "react";
+import styles from "./footer.module.css";
+import { Col, Row, Typography } from "antd";
+import { Github, Linkedin, Medium, Stackoverflow } from "../../icons";
 
 const FooterComp = () => {
-    return (
-        <div>
-            <footer className={styles.footer}>
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Powered by{' '}
-                    <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-                </a>
-            </footer>
+  const { Title, Text } = Typography;
+  return (
+    <div className={styles.footer}>
+      <div className={styles.item}>
+        <Text className={styles.title}> Let's work together! </Text>
+        <Text className={styles.description}>
+          We can collaborate or you can reach out to me for Freelance job
+          offers.
+        </Text>
+        <a href="#">bekiryetim@gmail.com</a>
+
+        <div className={styles.icon}>
+          <Github />
+          <Linkedin />
+          <Medium />
+          <Stackoverflow />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default FooterComp;
