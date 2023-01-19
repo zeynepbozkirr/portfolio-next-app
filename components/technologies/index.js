@@ -12,11 +12,25 @@ import {
 
 const TechnologiesComp = forwardRef((props, ref) => {
   const icons = [
-    JavascriptSvgrepoCom,
+    () => <JavascriptSvgrepoCom width={50} height={50} />,
     ReactSvgrepoCom,
     Css3SvgrepoCom,
     GitSvgrepoCom,
     NodeJsSvgrepoCom,
+  ];
+  const mockData = [
+    {
+      title: "JS",
+      icon: <JavascriptSvgrepoCom width={50} height={50} />,
+    },
+    {
+      title: "JS",
+      icon: <JavascriptSvgrepoCom width={50} height={50} />,
+    },
+    {
+      title: "JS",
+      icon: <JavascriptSvgrepoCom width={50} height={50} />,
+    },
   ];
 
   const animation = useAnimation();
@@ -71,14 +85,14 @@ const TechnologiesComp = forwardRef((props, ref) => {
         initial="hidden"
         animate="visible"
       >
-        {icons.map((itemx, index) => (
+        {mockData.map((itemx, index) => (
           <motion.li
             key={index}
             className={styles.item}
             variants={item}
             // animate={animation}
           >
-            {itemx()}
+            {itemx.icon}
           </motion.li>
         ))}
       </motion.ul>

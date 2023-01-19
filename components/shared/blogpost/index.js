@@ -4,15 +4,14 @@ import styles from "./blogpost.module.css";
 import { motion } from "framer-motion";
 
 const BlogPost = ({ data }) => {
-  console.log(data, "daa");
-
   const { Text } = Typography;
 
   return (
-    <div className={styles.blogPost}>
+    <div>
       {data.map((item, index) => {
         return (
           <motion.div
+            key={index}
             className="box"
             initial={{ x: -5000 }}
             animate={{ x: 0 }}
@@ -22,7 +21,7 @@ const BlogPost = ({ data }) => {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            <Row key={index} style={{ width: "100%" }}>
+            <Row style={{ width: "100%" }}>
               <Col lg={14} md={14} xs={24} sm={24}>
                 <Text className={styles.date}>
                   {item.date} - {item.topic}
