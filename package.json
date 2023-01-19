@@ -10,6 +10,7 @@
     "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor 4em=currentWidth 4em=currenHeight\"  "
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.5.2",
     "antd": "^5.1.5",
     "autoprefixer": "^10.4.13",
     "eslint": "8.31.0",
