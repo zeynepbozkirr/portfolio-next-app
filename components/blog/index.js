@@ -2,14 +2,10 @@ import React, { forwardRef } from "react";
 import styles from "./blog.module.css";
 import FadeTitle from "../shared/fadetitle";
 import BlogPost from "../shared/blogpost";
-import { Button, Col, Row, Typography } from "antd";
-import MotionItem from "../shared/motionItemAnimation";
-import { motion } from "framer-motion";
+import { Typography } from "antd";
 
 // eslint-disable-next-line react/display-name
 const BlogComp = forwardRef((props, ref) => {
-  const { Text } = Typography;
-  console.log(props.inView, "pppp");
   return (
     <div id="blog" ref={ref} className={styles.blog}>
       <FadeTitle
@@ -23,7 +19,7 @@ const BlogComp = forwardRef((props, ref) => {
 
       {data.map((item, index) => {
         return (
-          <div>
+          <div key={index}>
             <BlogPost
               inView={props.inView}
               item={item}
