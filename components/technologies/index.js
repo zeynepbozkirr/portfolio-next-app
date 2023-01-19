@@ -10,6 +10,7 @@ import {
   NodeJsSvgrepoCom,
 } from "../icons";
 
+// eslint-disable-next-line react/display-name
 const TechnologiesComp = forwardRef((props, ref) => {
   const mockData = [
     {
