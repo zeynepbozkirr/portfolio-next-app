@@ -1,57 +1,72 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Animate } from "react-move";
+import { easeExpOut, easeBackOut } from "d3-ease";
 import { Button, Col, Row, Typography } from "antd";
 import styles from "./blogpost.module.css";
-import { motion } from "framer-motion";
 
-const BlogPost = ({ data }) => {
-  const { Text } = Typography;
+const trackStyles = {
+  borderRadius: 4,
+  // backgroundColor: "blue",
+  color: "red",
+  position: "relative",
+  margin: "5px 3px 10px",
+  width: "100%",
+  height: "100%",
+};
+
+const BlogPost = ({ inView, item, direction }) => {
+  const [state, setState] = useState(false);
+
+  const { Text, Title } = Typography;
+
+  const enter = () => ({
+    opacity: [5],
+    x: [direction % 2 ? -400 : 400, direction % 2 ? 0 : 0],
+    timing: { duration: 8000 },
+  });
+
+  const update = () => ({
+    opacity: [5],
+    x: [direction % 2 ? -400 : 400, direction % 2 ? 0 : 0],
+    timing: { duration: 1050, ease: easeExpOut },
+  });
+
+  useEffect(() => {
+    enter();
+  }, [inView]);
 
   return (
     <div>
-      {data.map((item, index) => {
-        return (
-          <motion.div
-            key={index}
-            className="box"
-            initial={{ x: -5000 }}
-            animate={{ x: 0 }}
-            transition={{
-              duration: 1,
-              delay: 2,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-          >
-            <Row style={{ width: "100%" }}>
-              <Col lg={14} md={14} xs={24} sm={24}>
-                <Text className={styles.date}>
-                  {item.date} - {item.topic}
-                </Text>
-                <br />
-                <Text className={styles.title}>{item.title}</Text>
-                <br />
-                <Text ellipsis={true} className={styles.desc}>
-                  {item.description}
-                </Text>
-              </Col>
+      <Animate enter={enter} update={update}>
+        {(state) => {
+          const { x } = state;
 
-              <Col
-                xl={10}
-                lg={10}
-                md={10}
-                xs={24}
-                sm={24}
-                className={styles.buttonCol}
+          return (
+            <div style={trackStyles}>
+              <Row
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: 150,
+                  borderRadius: 4,
+                  opacity: 0.7,
+                  // border: "solid 2px #10758c",
+                  WebkitTransform: `translate3d(${x}px, 0, 0)`,
+                  transform: `translate3d(${x}px, 0, 0)`,
+                }}
               >
-                <Button className={styles.button}>MORE</Button>
-              </Col>
-
-              <Col>
-                <hr />
-              </Col>
-            </Row>
-          </motion.div>
-        );
-      })}
+                <Col>
+                  <Text>
+                    {item.date} - {item.topic}
+                  </Text>
+                  <Title> {item.title}</Title>
+                  <Text>{item.description}</Text>
+                </Col>
+              </Row>
+            </div>
+          );
+        }}
+      </Animate>
     </div>
   );
 };

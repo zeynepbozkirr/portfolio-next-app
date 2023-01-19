@@ -47,7 +47,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
     },
   };
 
-  const item = {
+  const itemLi = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
@@ -69,9 +69,9 @@ const TechnologiesComp = forwardRef((props, ref) => {
         initial="hidden"
         animate="visible"
       >
-        {mockData.map((itemx, index) => (
-          <motion.li key={index} className={styles.item} variants={item}>
-            {itemx.icon}
+        {mockData.map((item, index) => (
+          <motion.li key={index} className={styles.item} variants={itemLi}>
+            {item.icon}
           </motion.li>
         ))}
       </motion.ul>

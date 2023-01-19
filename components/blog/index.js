@@ -1,11 +1,17 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./blog.module.css";
 import FadeTitle from "../shared/fadetitle";
 import BlogPost from "../shared/blogpost";
+import { Button, Col, Row, Typography } from "antd";
+import MotionItem from "../shared/motionItemAnimation";
+import { motion } from "framer-motion";
 
-const BlogComp = () => {
+// eslint-disable-next-line react/display-name
+const BlogComp = forwardRef((props, ref) => {
+  const { Text } = Typography;
+  console.log(props.inView, "pppp");
   return (
-    <div id="blog" className={styles.blog}>
+    <div id="blog" ref={ref} className={styles.blog}>
       <FadeTitle
         titleType={"top"}
         title={"BLOG"}
@@ -15,10 +21,26 @@ const BlogComp = () => {
         }
       />
 
-      <BlogPost data={data} />
+      {data.map((item, index) => {
+        return (
+          <div>
+            <BlogPost
+              inView={props.inView}
+              item={item}
+              direction={index}
+            ></BlogPost>
+            <br />
+            <br /> <br />
+            <br /> <br />
+            <br /> <br />
+            <br />
+            <hr />
+          </div>
+        );
+      })}
     </div>
   );
-};
+});
 
 export default BlogComp;
 
