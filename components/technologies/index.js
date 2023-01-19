@@ -1,7 +1,7 @@
-import React, { forwardRef, useEffect } from "react";
+import React, { forwardRef } from "react";
 import styles from "./technologies.module.css";
 import FadeTitle from "../shared/fadetitle";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   JavascriptSvgrepoCom,
   ReactSvgrepoCom,
@@ -11,45 +11,28 @@ import {
 } from "../icons";
 
 const TechnologiesComp = forwardRef((props, ref) => {
-  const icons = [
-    () => <JavascriptSvgrepoCom width={50} height={50} />,
-    ReactSvgrepoCom,
-    Css3SvgrepoCom,
-    GitSvgrepoCom,
-    NodeJsSvgrepoCom,
-  ];
   const mockData = [
     {
       title: "JS",
       icon: <JavascriptSvgrepoCom width={50} height={50} />,
     },
     {
-      title: "JS",
-      icon: <JavascriptSvgrepoCom width={50} height={50} />,
+      title: "React",
+      icon: <ReactSvgrepoCom width={50} height={50} />,
     },
     {
-      title: "JS",
-      icon: <JavascriptSvgrepoCom width={50} height={50} />,
+      title: "Css",
+      icon: <Css3SvgrepoCom width={50} height={50} />,
+    },
+    {
+      title: "Git",
+      icon: <GitSvgrepoCom width={50} height={50} />,
+    },
+    {
+      title: "Node",
+      icon: <NodeJsSvgrepoCom width={50} height={50} />,
     },
   ];
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (props.inView) {
-      animation.start({
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-          y: 0,
-          opacity: 1,
-        },
-      });
-    } else {
-      animation.start({
-        x: "-100vw",
-      });
-    }
-  }, [props.inView]);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -72,7 +55,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
   };
 
   return (
-    <div ref={ref} id="technologies" className={styles.tech}>
+    <div {...props} ref={ref} id="technologies" className={styles.tech}>
       <FadeTitle
         title={"TECHNOLOGIES"}
         description={"Programming languages and tools I use"}
@@ -86,12 +69,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
         animate="visible"
       >
         {mockData.map((itemx, index) => (
-          <motion.li
-            key={index}
-            className={styles.item}
-            variants={item}
-            // animate={animation}
-          >
+          <motion.li key={index} className={styles.item} variants={item}>
             {itemx.icon}
           </motion.li>
         ))}
