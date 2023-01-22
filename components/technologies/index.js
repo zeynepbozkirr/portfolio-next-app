@@ -15,25 +15,26 @@ const TechnologiesComp = forwardRef((props, ref) => {
   const mockData = [
     {
       title: "JS",
-      icon: <JavascriptSvgrepoCom width={50} height={50} />,
+      icon: JavascriptSvgrepoCom,
     },
     {
       title: "React",
-      icon: <ReactSvgrepoCom width={50} height={50} />,
+      icon: ReactSvgrepoCom,
     },
     {
       title: "Css",
-      icon: <Css3SvgrepoCom width={50} height={50} />,
+      icon: Css3SvgrepoCom,
     },
     {
       title: "Git",
-      icon: <GitSvgrepoCom width={50} height={50} />,
+      icon: GitSvgrepoCom,
     },
     {
       title: "Node",
-      icon: <NodeJsSvgrepoCom width={50} height={50} />,
+      icon: NodeJsSvgrepoCom,
     },
   ];
+  console.log(mockData, "iiii");
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -70,8 +71,8 @@ const TechnologiesComp = forwardRef((props, ref) => {
         animate="visible"
       >
         {mockData.map((item, index) => (
-          <motion.li key={index} className={styles.item} variants={itemLi}>
-            {item.icon}
+          <motion.li key={index} variants={itemLi} className={styles.iconitem}>
+            <item.icon className={styles.item} />
           </motion.li>
         ))}
       </motion.ul>

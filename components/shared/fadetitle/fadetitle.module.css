@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hammersmith+One&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Noto+Sans+Chakma&family=Nunito:wght@400;900&family=Passions+Conflict&family=Qwitcher+Grypen&family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,500&family=Satisfy&family=Sevillana&family=Source+Sans+Pro:ital,wght@1,600;1,900&family=The+Nautigal&family=Yellowtail&display=swap');
 .header{
     font-size: 3.5rem;
     /*background: red;*/
-
+    font-family: "Raleway", sans-serif;
+    font-weight: 800 !important;
+    display: flex;
+    align-items: end
 }
 
 .header::after{
@@ -45,6 +49,16 @@
 
     }
 
+}
+
+.point{
+    margin-left: 5px;
+    margin-bottom: 11px;
+    background: blue;
+    color: blue;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
 }
 .desc{
     /*color: #0087ca;*/

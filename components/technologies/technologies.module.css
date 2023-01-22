@@ -1,7 +1,7 @@
 .tech{
     height: 500px;
     padding-left: 10%;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 
@@ -18,11 +18,21 @@
     padding: 15px;
     border-radius: 50px;
 }
+.iconitem{
+    display: flex;
 
+    justify-content: center;
+}
 .item {
+
     /*background-color: blue;*/
+    width: 3rem;
+    height: 3rem;
+    transition: width 1s, height 1s;
+
 }
 .item:hover{
-    width: 12em;
+    width: 5rem;
+    height: 5rem;
 }
 

@@ -10,7 +10,7 @@ const HomeComp = forwardRef((props, ref) => {
   return (
     <>
       <Row ref={ref} className={styles.home}>
-        <Col className={styles.homeAbout} style={{}} offset={1} span={16}>
+        <Col className={styles.homeAbout} offset={1} span={16}>
           <Text className={styles.name}>Bekir Yetim</Text>
           <Text className={styles.job}> FRONTEND DEVELOPER</Text>
           <Text className={styles.explan}>
@@ -18,7 +18,11 @@ const HomeComp = forwardRef((props, ref) => {
             idea into reality quite enjoyable. You can have a closer look at my
             portfolio to see my projects.
           </Text>
-          <Button className={styles.button}>button</Button>
+          <div>
+            <Button className={styles.button}>
+              <div> button </div>
+            </Button>
+          </div>
         </Col>
         <div
           style={{

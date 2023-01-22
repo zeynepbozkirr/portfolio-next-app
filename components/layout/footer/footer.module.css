@@ -1,43 +1,87 @@
-.footer{
-    padding-top: 80px;
-    /*height: 500px;*/
-    display: flex;
-    justify-content: center;
-    background: #F1F1F1;
-}
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hammersmith+One&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Noto+Sans+Chakma&family=Nunito:wght@400;900&family=Passions+Conflict&family=Qwitcher+Grypen&family=Raleway:ital,wght@0,300;1,100&family=Satisfy&family=Sevillana&family=Source+Sans+Pro:ital,wght@1,600;1,900&family=The+Nautigal&family=Yellowtail&display=swap');
 
+.footer{
+    padding-top: 60px;
+    /*height: 500px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*background: #F1F1F1;*/
+
+}
 .item{
     display: flex;
     flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+}
+.titleItem{
+    display: flex;
+    /*!*flex-direction: column;*!*/
+    /*align-items: e;*/
+    justify-content: center;
+    align-items: end;
 
 }
+
 .title{
     display: flex;
     justify-content: center;
     font-size: 4em;
     font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    align-items: end;
+
 }
 .description{
     display: flex;
     justify-content: center;
-    color: #757677;
+    /*color: #757677;*/
     padding-top: 15px;
     padding-bottom: 15px;
-
-
+    font-family: "Raleway", sans-serif;
 }
+
 .item a{
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
-
 }
+
 .icon{
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
     gap: 2em;
+}
+.end{
 
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+}
+.line{
+    width: 80%;
+    border-top: solid 1px rgba(241, 241, 241, 1);
+    margin-bottom: 20px;
+}
+
+.built{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.point{
+    margin-left: 15px;
+    margin-bottom: 25px;
+    background: blue;
+    color: blue;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
 }

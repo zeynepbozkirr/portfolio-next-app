@@ -44,7 +44,7 @@ const data = [
   {
     date: "Ara 10, 2020\n",
     topic: "JAVASCRIPT",
-    title: "title1",
+    title: "BEM (BLOCK__ELEMENT — MODIFIER)",
     description:
       "When starting a project, sometimes things get too rambunctious and naming gets really complicated, and at the end of the day you may even find yourself in a spaghetti pile of code.\n" +
       "\n",
@@ -52,7 +52,7 @@ const data = [
   {
     date: "Ara 15, 2020\n",
     topic: "css",
-    title: "title2",
+    title: "CSS RESET AND CSS NORMALIZE",
     description:
       "The argmuent of which approach should be used to eliminate the differences between styles is an ongoing debate between Normlize CSS and Reset CSS.\n" +
       "\n",
@@ -60,7 +60,7 @@ const data = [
   {
     date: "Mar 05, 2020\n",
     topic: "html",
-    title: "title3",
+    title: "WHAT IS CLEAN CODE?",
     description:
       "Firstly, writing clean code is an investmen for the future. To save time on coding in the future, one should spend some time on writing clean code at the beginning\n" +
       "\n",

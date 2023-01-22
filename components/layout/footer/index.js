@@ -8,7 +8,11 @@ const FooterComp = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.item}>
-        <Text className={styles.title}> Let work together! </Text>
+        <div className={styles.titleItem}>
+          <Text className={styles.title}>Let work together!</Text>
+          <Text className={styles.point} />
+        </div>
+
         <Text className={styles.description}>
           We can collaborate or you can reach out to me for Freelance job
           offers.
@@ -21,6 +25,13 @@ const FooterComp = () => {
           <Medium />
           <Stackoverflow />
         </div>
+      </div>
+      <div className={styles.end}>
+        <div className={styles.line}></div>
+        <Text className={styles.built}>Built With 💙 Zeynep Bozkır</Text>
+        <Text className={styles.built}>
+          You can access the source codes of this website on Github.
+        </Text>
       </div>
     </div>
   );
