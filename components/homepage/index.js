@@ -2,6 +2,7 @@ import React, { forwardRef } from "react";
 import styles from "./home.module.css";
 import { Button, Col, Row, Typography } from "antd";
 import Contact from "./contact";
+import NeumorphismButton from "../shared/buttonNeumorphism";
 
 // eslint-disable-next-line react/display-name
 const HomeComp = forwardRef((props, ref) => {
@@ -19,9 +20,7 @@ const HomeComp = forwardRef((props, ref) => {
             portfolio to see my projects.
           </Text>
           <div>
-            <Button className={styles.button}>
-              <div> button </div>
-            </Button>
+            <NeumorphismButton buttonTitle={"My Project"} />
           </div>
         </Col>
         <div
