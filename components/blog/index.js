@@ -25,9 +25,6 @@ const BlogComp = forwardRef((props, ref) => {
               item={item}
               direction={index}
             ></BlogPost>
-            <br />
-            <br /> <br />
-            <br /> <br />
           </div>
         );
       })}
