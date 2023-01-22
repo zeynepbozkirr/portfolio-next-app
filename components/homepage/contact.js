@@ -8,55 +8,75 @@ import Link from "next/link";
 import { Typography } from "antd";
 
 const Contact = () => {
-  const [github, setGithub] = useState(false);
-  const [linkedin, setLinkedin] = useState(false);
-  const [stackoverflow, setStackoverflow] = useState(false);
-  const [linked, setLinked] = useState(false);
-  const [medium, setMedium] = useState(false);
+  const [hoverValue, setHoverValue] = useState({
+    github: false,
+    linkedin: false,
+    medium: false,
+  });
 
   const { Paragraph, Text } = Typography;
+
+  const changeHover = (selected, value) => {
+    if (selected === "github") {
+      setHoverValue({ ...hoverValue, github: value });
+    } else if (selected === "medium") {
+      setHoverValue({ ...hoverValue, medium: value });
+    } else {
+      setHoverValue({ ...hoverValue, linkedin: value });
+    }
+  };
 
   return (
     <div className={styles.contactIcon}>
       <Link
         className={styles.Link}
-        onMouseEnter={() => setGithub(!github)}
-        onMouseLeave={() => setGithub(!github)}
+        onMouseEnter={() => changeHover("github", true)}
+        onMouseLeave={() => changeHover("github", false)}
         href="https://github.com/bekirytm"
       >
-        <div className={styles.div}>
-          <Github className={styles.icon} />
-        </div>
-        <div className={styles.div}>
-          <Text className={styles.text}>GITHUB</Text>
-        </div>
+        {hoverValue.github ? (
+          <div className={styles.iconArea}>
+            <Github className={styles.icon} />
+          </div>
+        ) : (
+          <div>
+            <Text className={styles.text}>GITHUB</Text>
+          </div>
+        )}
       </Link>
+
       <Link
         className={styles.Link}
-        onMouseEnter={() => setLinkedin(!linkedin)}
-        onMouseLeave={() => setLinkedin(!linkedin)}
-        href="https://www.linkedin.com/in/bekir-yetim-7b00b3181/"
+        onMouseEnter={() => changeHover("linkedin", true)}
+        onMouseLeave={() => changeHover("linkedin", false)}
+        href="https://github.com/bekirytm"
       >
-        <Linkedin className={styles.icon} />
-        <Text className={styles.text}>LINKEDIN</Text>
+        {hoverValue.linkedin ? (
+          <div className={styles.iconArea}>
+            <Linkedin className={styles.icon} />
+          </div>
+        ) : (
+          <div>
+            <Text className={styles.text}>LINKEDIN</Text>
+          </div>
+        )}
       </Link>
+
       <Link
         className={styles.Link}
-        onMouseEnter={() => setMedium(!medium)}
-        onMouseLeave={() => setMedium(!medium)}
-        href="https://medium.com/@bekir.ytm"
+        onMouseEnter={() => changeHover("medium", true)}
+        onMouseLeave={() => changeHover("medium", false)}
+        href="https://github.com/bekirytm"
       >
-        <Medium className={styles.icon} />
-        <Text className={styles.text}>MEDIUM</Text>
-      </Link>
-      <Link
-        className={styles.Link}
-        onMouseEnter={() => setStackoverflow(!stackoverflow)}
-        onMouseLeave={() => setStackoverflow(!stackoverflow)}
-        href="https://stackoverflow.com/users/12003912/bekirytm"
-      >
-        <Stackoverflow className={styles.icon} />
-        <Text className={styles.text}>STACKOVERFLOW</Text>
+        {hoverValue.medium ? (
+          <div className={styles.iconArea}>
+            <Medium className={styles.icon} />
+          </div>
+        ) : (
+          <div>
+            <Text className={styles.text}>MEDIUM</Text>
+          </div>
+        )}
       </Link>
     </div>
   );

@@ -20,15 +20,15 @@ const BlogPost = ({ inView, item, direction }) => {
   const { Text, Title } = Typography;
 
   const enter = () => ({
-    opacity: [0, 5],
-    x: [direction % 2 ? -400 : 400, direction % 2 ? 0 : 0],
+    opacity: [0, 1],
+    x: [direction % 2 ? -1 : 1, direction % 2 ? 0 : 0],
     timing: { duration: 200 },
   });
 
   const update = () => ({
-    opacity: [5],
-    x: [direction % 2 ? -400 : 400, direction % 2 ? 0 : 0],
-    timing: { duration: 1050, ease: easeExpOut },
+    opacity: [0, 1],
+    x: [direction % 2 ? -1 : 1, direction % 2 ? 0 : 0],
+    timing: { duration: 7050, ease: easeExpOut },
   });
 
   useEffect(() => {

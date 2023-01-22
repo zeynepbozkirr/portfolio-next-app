@@ -88,38 +88,36 @@
 }
 
 .Link{
-    /*position: relative;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*width: 60px;*/
-    /*height: 60px;*/
-    /*background: #fff;*/
-    /*border-radius: 50%;*/
-    /*cursor: pointer;*/
-    /*transition: 0.5s;*/
-
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
 }
 .Link:hover{
-    /*width: 80px;*/
+    width: 80px;
 }
-/*.Link::before{*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    inset:0;*/
-/*    border-radius: 50%;*/
-/*    transition: 0.5s;*/
-/*}*/
+.Link::before{
+    content: "";
+    position: absolute;
+    inset:0;
+    border-radius: 50%;
+    transition: 0.5s;
+}
 
-/*.Link::after{*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    border-radius: 50%;*/
-/*    opacity: 0;*/
-/*    transition: 0.5s;*/
-/*    background: red;*/
-/*    z-index: -1;*/
-/*}*/
+.Link::after{
+    background-color: green;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
 
 .icon{
     color:#777;
@@ -129,25 +127,42 @@
 }
 
 .icon:hover{
+    transform: rotateY(180deg);
     /*transform: scale(0);*/
     /*color: #fff;*/
     /*transition-delay: 0s;*/
 }
-.div{
-}
+
 
 .text{
-    position: absolute;
-    color: red;
-    font-size: 1.1em;
+    font-weight: bold;
+    font-size: 1em;
     text-transform: uppercase;
-    /*letter-spacing: 0.1em;*/
+    letter-spacing: 0.1em;
     transform: scale(0);
     transition: 0.5s;
     transition-delay: 0s;
 }
 .text:hover{
-    color: blue;
     transform: scale(1);
     transition-delay: 0.25s;
+}
+
+.iconArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: iconArea 1s ease;
+}
+@keyframes iconArea {
+    0% {
+        transform: scale(1, 1) rotateY(0deg);
+    }
+    50% {
+        transform: scale(1.5, 1.5) rotateY(180deg);
+    }
+    100% {
+        transform: scale(1, 1) rotateY(0deg);
+    }
 }
