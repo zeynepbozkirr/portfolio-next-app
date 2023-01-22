@@ -7,12 +7,12 @@ const ProjectComp = () => {
   return (
     <div id="projects" className={styles.project}>
       <FadeTitle
-        titleType={"bottom"}
         title={"MY PROJECTS"}
         description={
           "You can review the projects and applications I have developed.\n" +
           "\n"
         }
+        dataAousTitle={"zoom-in-up"}
       />
     </div>
   );

@@ -10,13 +10,13 @@ const HeaderComp = () => {
         <Link href="/">BEKİR YETİM</Link>
       </Col>
       <Col className={styles.ul} offset={1} xs={23} sm={11} md={11} lg={11}>
-        <Link href="/#technologies">
+        <Link href="/#technologies" smooth={true}>
           <li>Technologies</li>
         </Link>
-        <Link href="/#projects">
+        <Link href="/#projects" smooth={true}>
           <li>Projects</li>
         </Link>
-        <Link href="/#blog">
+        <Link href="/#blog" spy={true} smooth={true}>
           <li>Blog</li>
         </Link>
       </Col>

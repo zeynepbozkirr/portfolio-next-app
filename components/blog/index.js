@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useEffect } from "react";
 import styles from "./blog.module.css";
 import FadeTitle from "../shared/fadetitle";
 import BlogPost from "../shared/blogpost";
@@ -9,7 +9,7 @@ const BlogComp = forwardRef((props, ref) => {
   return (
     <div id="blog" ref={ref} className={styles.blog}>
       <FadeTitle
-        titleType={"top"}
+        dataAousTitle={"zoom-in-up"}
         title={"BLOG"}
         description={
           "I am researching and writing articles on the topics that I am curious about.\n" +
@@ -28,9 +28,6 @@ const BlogComp = forwardRef((props, ref) => {
             <br />
             <br /> <br />
             <br /> <br />
-            <br /> <br />
-            <br />
-            <hr />
           </div>
         );
       })}

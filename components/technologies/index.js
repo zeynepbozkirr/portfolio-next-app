@@ -61,8 +61,8 @@ const TechnologiesComp = forwardRef((props, ref) => {
       <FadeTitle
         title={"TECHNOLOGIES"}
         description={"Programming languages and tools I use"}
-        type={"fade"}
-        titleType={"left"}
+        dataAousTitle={"fade-right"}
+        dataAousDesc={"fade-up-right"}
       />
       <motion.ul
         className={styles.container}

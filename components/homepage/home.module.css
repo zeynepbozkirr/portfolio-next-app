@@ -92,14 +92,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
     transition: 0.5s;
 }
 .Link:hover{
-    width: 80px;
+
 }
 .Link::before{
     content: "";
@@ -128,9 +127,6 @@
 
 .icon:hover{
     transform: rotateY(180deg);
-    /*transform: scale(0);*/
-    /*color: #fff;*/
-    /*transition-delay: 0s;*/
 }
 
 
@@ -149,7 +145,7 @@
 }
 
 .iconArea {
-    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
