@@ -11,20 +11,19 @@ const BlogPost = ({ item, direction }) => {
   useEffect(() => {
     Aos.init({ duration: 600 });
   }, []);
+
   return (
-    <div
+    <Col
       data-aos={direction % 2 ? "fade-left" : "fade-right"}
       data-aos-anchor-placement="bottom-bottom"
     >
-      <Row>
-        <Text className={styles.date}>
-          {item.date} - {item.topic}
-        </Text>
-        <Title className={styles.title}> {item.title}</Title>
-        <Text className={styles.desc}>{item.description}</Text>
-      </Row>
-      <hr />
-    </div>
+      <Text className={styles.date}>
+        {item.date} - {item.topic}
+      </Text>
+      <Title className={styles.title}> {item.title}</Title>
+
+      <Text className={styles.desc}>{item.description}</Text>
+    </Col>
   );
 };
 

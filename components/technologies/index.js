@@ -9,6 +9,7 @@ import {
   GitSvgrepoCom,
   NodeJsSvgrepoCom,
 } from "../icons";
+import { Row } from "antd";
 
 // eslint-disable-next-line react/display-name
 const TechnologiesComp = forwardRef((props, ref) => {
@@ -57,7 +58,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
   };
 
   return (
-    <div {...props} ref={ref} id="technologies" className={styles.tech}>
+    <Row {...props} ref={ref} id="technologies" className={styles.tech}>
       <FadeTitle
         title={"TECHNOLOGIES"}
         description={"Programming languages and tools I use"}
@@ -76,7 +77,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
           </motion.li>
         ))}
       </motion.ul>
-    </div>
+    </Row>
   );
 });
 

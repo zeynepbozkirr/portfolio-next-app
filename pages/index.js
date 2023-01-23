@@ -6,6 +6,7 @@ import TechnologiesComp from "../components/technologies";
 import ProjectComp from "../components/projects";
 import BlogComp from "../components/blog";
 import { useInView } from "framer-motion";
+import { Col, Row } from "antd";
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -22,11 +23,19 @@ export default function Home() {
   }, [homeInView, techInView, blogInview]);
 
   return (
-    <div className={styles.container}>
-      <HomeComp ref={homeRef} />
-      <TechnologiesComp ref={techRef} inView={techInView} />
-      <ProjectComp />
-      <BlogComp ref={blogRef} inView={blogInview} />
-    </div>
+    <Row>
+      <Col span={24}>
+        <HomeComp ref={homeRef} />
+      </Col>
+      <Col span={24}>
+        <TechnologiesComp ref={techRef} inView={techInView} />
+      </Col>
+      <Col span={24}>
+        <ProjectComp />
+      </Col>
+      <Col span={24}>
+        <BlogComp ref={blogRef} inView={blogInview} />
+      </Col>
+    </Row>
   );
 }

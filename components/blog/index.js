@@ -2,12 +2,12 @@ import React, { forwardRef, useEffect } from "react";
 import styles from "./blog.module.css";
 import FadeTitle from "../shared/fadetitle";
 import BlogPost from "../shared/blogpost";
-import { Typography } from "antd";
+import { Col, Row, Typography } from "antd";
 
 // eslint-disable-next-line react/display-name
 const BlogComp = forwardRef((props, ref) => {
   return (
-    <div id="blog" ref={ref} className={styles.blog}>
+    <Row id="blog" ref={ref} className={styles.blog}>
       <FadeTitle
         dataAousTitle={"zoom-in-up"}
         title={"BLOG"}
@@ -19,16 +19,14 @@ const BlogComp = forwardRef((props, ref) => {
 
       {data.map((item, index) => {
         return (
-          <div key={index}>
-            <BlogPost
-              inView={props.inView}
-              item={item}
-              direction={index}
-            ></BlogPost>
-          </div>
+          <BlogPost
+            inView={props.inView}
+            item={item}
+            direction={index}
+          ></BlogPost>
         );
       })}
-    </div>
+    </Row>
   );
 });
 

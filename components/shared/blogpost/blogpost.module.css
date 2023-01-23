@@ -25,19 +25,19 @@
 
 .title{
     color: #191b1d;
-    overflow-wrap: break-word;
-    line-height: 3rem;
+    /*overflow-wrap: break-word;*/
+    /*line-height: 3rem;*/
     font-weight: 800 !important;
-    letter-spacing: -0.06em;
-    font-size: 1rem !important;
+    /*letter-spacing: -0.06em;*/
+    /*font-size: 1rem !important;*/
     font-family: "Raleway", sans-serif;
 
 
 }
 .desc{
-    display: flex;
+    /*display: flex;*/
     color: #757677;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     font-family: "Raleway", sans-serif;
 
 }
