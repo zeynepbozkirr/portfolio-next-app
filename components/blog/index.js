@@ -20,6 +20,7 @@ const BlogComp = forwardRef((props, ref) => {
       {data.map((item, index) => {
         return (
           <BlogPost
+            key={index}
             inView={props.inView}
             item={item}
             direction={index}
