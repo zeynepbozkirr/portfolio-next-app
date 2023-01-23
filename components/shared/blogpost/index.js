@@ -8,21 +8,26 @@ import "aos/dist/aos.css";
 
 const BlogPost = ({ item, direction }) => {
   const { Text, Title } = Typography;
+  const [direct, setDirect] = useState(0);
+
   useEffect(() => {
     Aos.init({ duration: 600 });
   }, []);
 
   return (
-    <Col
-      data-aos={direction % 2 ? "fade-left" : "fade-right"}
-      data-aos-anchor-placement="bottom-bottom"
-    >
-      <Text className={styles.date}>
-        {item.date} - {item.topic}
-      </Text>
-      <Title className={styles.title}> {item.title}</Title>
+    <Col data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <Col>
+        <Text className={styles.date}>
+          {item.date} - {item.topic}
+        </Text>
+      </Col>
+      <Col>
+        <Title className={styles.title}> {item.title}</Title>
+      </Col>
 
-      <Text className={styles.desc}>{item.description}</Text>
+      <Col>
+        <Text className={styles.desc}>{item.description}</Text>
+      </Col>
     </Col>
   );
 };

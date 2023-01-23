@@ -15,10 +15,12 @@ const FadeTitle = ({ title, description, dataAousTitle, dataAousDesc }) => {
   return (
     <Row>
       <Col data-aos={dataAousTitle} data-aos-anchor-placement="bottom-bottom">
-        <h5 className={styles.header}>
+        <h5 className={styles.header}>{title}</h5>
+        <p className={styles.p}>
           {title}
-          <div className={styles.point} />
-        </h5>
+          <span className={styles.span}>{title}</span>
+        </p>
+
         <Text data-aos={dataAousDesc} className={styles.desc}>
           {description}
         </Text>

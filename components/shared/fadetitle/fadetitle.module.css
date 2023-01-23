@@ -1,65 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hammersmith+One&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Noto+Sans+Chakma&family=Nunito:wght@400;900&family=Passions+Conflict&family=Qwitcher+Grypen&family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,500&family=Satisfy&family=Sevillana&family=Source+Sans+Pro:ital,wght@1,600;1,900&family=The+Nautigal&family=Yellowtail&display=swap');
 .header{
-    font-size: 3.5rem;
-    /*background: red;*/
-    font-family: "Raleway", sans-serif;
-    font-weight: 800 !important;
-    display: flex;
-    align-items: end
+    /*font-size: 3.5rem;*/
+    /*!*background: red;*!*/
+    /*font-family: "Raleway", sans-serif;*/
+    /*font-weight: 800 !important;*/
+    /*display: flex;*/
+    /*align-items: end;*/
+    /*text-shadow: 20px -20px rgba(0, 0, 0, 0.3);*/
 }
-
-.header::after{
-    content: "TECHNOLOGIES";
-    color:rgba(0, 0, 0, 0.06);
-    font-size: 150%;
-    position: absolute;
-    left: 0;
-    top: -35px;
-}
-
-@media only screen and  (min-width: 481px) and (max-width: 767px){
-    .header{
-        font-size: 3.5rem;
-    }
-    .header::after{
-        font-size: 80%;
-        top:-10px;
-
-    }
+.p{
+    /*font-size: 3.5rem;*/
+    /*position: relative;*/
+    /*margin: 10px;*/
 
 }
-@media only screen and  (max-width: 481px){
-    .header{
-        font-size: 3.5rem;
-    }
-    .header::after{
-        font-size: 100%;
-        top:-10px;
-
-    }
-}
-@media (max-width: 480px) {
-
-    .header{
-        font-size: 1.5rem;
-    }
-    .header::after{
-        font-size: 100%;
-        top:-10px;
-
-    }
+.span{
+    /*position: absolute;*/
+    /*font-size: 100%;*/
+    color: rgba(0, 0, 0, 0.09);
+    top: -20px;
+    left: 30px;
 
 }
 
-.point{
-    margin-left: 5px;
-    margin-bottom: 11px;
-    background: blue;
-    color: blue;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-}
+
+/*@media only screen and  (min-width: 481px) and (max-width: 767px){*/
+/*    .p{*/
+/*        font-size: 3.5rem;*/
+/*    }*/
+
+/*    .span{*/
+/*        font-size: 100%;*/
+/*         }*/
+
+
+/*}*/
+/*@media only screen and  (max-width: 481px){*/
+/*    .p{*/
+/*        font-size: 2rem;*/
+/*    }*/
+/*    .span{*/
+/*        font-size: 100%;*/
+/*    }*/
+
+/*}*/
+/*@media (max-width: 480px) {*/
+
+/*    .p{*/
+/*        font-size: 2rem;*/
+/*    }*/
+/*    .span {*/
+/*            font-size: 100%;*/
+
+
+/*    }*/
+/*}*/
+
+
 .desc{
     /*color: #0087ca;*/
     margin-top: -20px;

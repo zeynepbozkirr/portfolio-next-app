@@ -23,7 +23,7 @@ const BlogComp = forwardRef((props, ref) => {
             key={index}
             inView={props.inView}
             item={item}
-            direction={index}
+            direction={index % 2 ? "fade-up-right" : "fade-up-left"}
           ></BlogPost>
         );
       })}

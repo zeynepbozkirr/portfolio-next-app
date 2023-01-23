@@ -10,7 +10,6 @@ const FooterComp = () => {
       <div className={styles.item}>
         <div className={styles.titleItem}>
           <Text className={styles.title}>Let work together!</Text>
-          <Text className={styles.point} />
         </div>
 
         <Text className={styles.description}>

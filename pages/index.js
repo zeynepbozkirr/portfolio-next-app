@@ -23,7 +23,7 @@ export default function Home() {
   }, [homeInView, techInView, blogInview]);
 
   return (
-    <Row>
+    <Row className={styles.container}>
       <Col span={24}>
         <HomeComp ref={homeRef} />
       </Col>
