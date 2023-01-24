@@ -17,16 +17,18 @@ const BlogComp = forwardRef((props, ref) => {
         }
       />
 
-      {data.map((item, index) => {
-        return (
-          <BlogPost
-            key={index}
-            inView={props.inView}
-            item={item}
-            direction={index % 2 ? "fade-up-right" : "fade-up-left"}
-          ></BlogPost>
-        );
-      })}
+      <div style={{ marginBottom: 100, width: "100%" }}>
+        {data.map((item, index) => {
+          return (
+            <BlogPost
+              key={index}
+              inView={props.inView}
+              item={item}
+              direction={index % 2 ? "fade-up-right" : "fade-up-left"}
+            ></BlogPost>
+          );
+        })}
+      </div>
     </Row>
   );
 });

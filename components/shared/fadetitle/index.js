@@ -13,19 +13,16 @@ const FadeTitle = ({ title, description, dataAousTitle, dataAousDesc }) => {
   }, []);
 
   return (
-    <Row>
-      <Col data-aos={dataAousTitle} data-aos-anchor-placement="bottom-bottom">
-        <h5 className={styles.header}>{title}</h5>
-        <p className={styles.p}>
-          {title}
-          <span className={styles.span}>{title}</span>
-        </p>
-
-        <Text data-aos={dataAousDesc} className={styles.desc}>
-          {description}
-        </Text>
-      </Col>
-    </Row>
+    <Col
+      className={styles.fadeTitle}
+      data-aos={dataAousTitle}
+      data-aos-anchor-placement="bottom-bottom"
+    >
+      <h5 className={styles.header}>{title}</h5>
+      <Text data-aos={dataAousDesc} className={styles.desc}>
+        {description}
+      </Text>
+    </Col>
   );
 };
 

@@ -2,10 +2,11 @@ import React from "react";
 import MotionTitle from "../shared/motiontitle";
 import FadeTitle from "../shared/fadetitle";
 import styles from "./projects.module.css";
+import { Col, Row } from "antd";
 
 const ProjectComp = () => {
   return (
-    <div id="projects" className={styles.project}>
+    <Row span={24} id="projects" className={styles.project}>
       <FadeTitle
         title={"MY PROJECTS"}
         description={
@@ -14,7 +15,7 @@ const ProjectComp = () => {
         }
         dataAousTitle={"zoom-in-up"}
       />
-    </div>
+    </Row>
   );
 };
 

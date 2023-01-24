@@ -1,67 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hammersmith+One&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Noto+Sans+Chakma&family=Nunito:wght@400;900&family=Passions+Conflict&family=Qwitcher+Grypen&family=Raleway:ital,wght@0,300;0,400;0,500;1,100;1,500&family=Satisfy&family=Sevillana&family=Source+Sans+Pro:ital,wght@1,600;1,900&family=The+Nautigal&family=Yellowtail&display=swap');
+.fadeTitle{
+    margin-bottom: 50px;
+}
 .header{
-    /*font-size: 3.5rem;*/
-    /*!*background: red;*!*/
-    /*font-family: "Raleway", sans-serif;*/
-    /*font-weight: 800 !important;*/
-    /*display: flex;*/
-    /*align-items: end;*/
-    /*text-shadow: 20px -20px rgba(0, 0, 0, 0.3);*/
-}
-.p{
-    /*font-size: 3.5rem;*/
-    /*position: relative;*/
-    /*margin: 10px;*/
-
-}
-.span{
-    /*position: absolute;*/
-    /*font-size: 100%;*/
-    color: rgba(0, 0, 0, 0.09);
-    top: -20px;
-    left: 30px;
-
+    font-size: 3.5rem;
+    /*background: red;*/
+    font-family: "Raleway", sans-serif;
+    font-weight: 800 !important;
+    text-shadow: 20px -20px rgba(0, 0, 0, 0.09);
 }
 
+@media only screen and  (min-width: 481px) and (max-width: 767px){
+    .header{
+        font-size: 3.5rem;
+    }
 
-/*@media only screen and  (min-width: 481px) and (max-width: 767px){*/
-/*    .p{*/
-/*        font-size: 3.5rem;*/
-/*    }*/
+    .span{
+        top: -15px;
+        left: 0;
+        font-size:3.5rem;
 
-/*    .span{*/
-/*        font-size: 100%;*/
-/*         }*/
-
-
-/*}*/
-/*@media only screen and  (max-width: 481px){*/
-/*    .p{*/
-/*        font-size: 2rem;*/
-/*    }*/
-/*    .span{*/
-/*        font-size: 100%;*/
-/*    }*/
-
-/*}*/
-/*@media (max-width: 480px) {*/
-
-/*    .p{*/
-/*        font-size: 2rem;*/
-/*    }*/
-/*    .span {*/
-/*            font-size: 100%;*/
+         }
 
 
-/*    }*/
-/*}*/
+}
+@media only screen and  (max-width: 481px){
+    .header{
+        font-size: 2rem;
+    }
+    .span{
+        top: -15px;
+        font-size:2rem;
+
+
+    }
+
+}
+@media (max-width: 480px) {
+
+    .header{
+        font-size: 2rem;
+    }
+    .span {
+        top: -10px;
+        left: 0;
+        font-size: 2rem;
+
+    }
+}
 
 
 .desc{
-    /*color: #0087ca;*/
-    margin-top: -20px;
-    display: flex;
+    margin-top: -20%;
     color: #757677;
-
+    display: flex;
 
 }

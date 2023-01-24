@@ -5,6 +5,7 @@ import { Button, Col, Row, Typography } from "antd";
 import styles from "./blogpost.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import NeumorphismButton from "../buttonNeumorphism";
 
 const BlogPost = ({ item, direction }) => {
   const { Text, Title } = Typography;
@@ -15,20 +16,32 @@ const BlogPost = ({ item, direction }) => {
   }, []);
 
   return (
-    <Col data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-      <Col>
-        <Text className={styles.date}>
-          {item.date} - {item.topic}
-        </Text>
-      </Col>
-      <Col>
-        <Title className={styles.title}> {item.title}</Title>
+    <Row
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+      className={styles.container}
+    >
+      <Col xs={24} sm={24} md={20} lg={20} classNmae={styles.colDate}>
+        <Col style={{ width: "100%" }}>
+          <Text className={styles.date}>
+            {item.date} - {item.topic}
+          </Text>
+          <h5 className={styles.title}> {item.title}</h5>
+          <Col className={styles.descCol}>
+            <Text
+              // ellipsis={true}
+              className={styles.desc}
+            >
+              {item.description}
+            </Text>
+          </Col>
+        </Col>
       </Col>
 
-      <Col>
-        <Text className={styles.desc}>{item.description}</Text>
+      <Col xs={24} sm={24} md={4} lg={4} className={styles.moreButtonCol}>
+        <Button className={styles.moreButton}>MORE</Button>
       </Col>
-    </Col>
+    </Row>
   );
 };
 

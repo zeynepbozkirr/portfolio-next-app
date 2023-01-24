@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useEffect } from "react";
 import styles from "./technologies.module.css";
 import FadeTitle from "../shared/fadetitle";
 import { motion } from "framer-motion";
@@ -10,33 +10,10 @@ import {
   NodeJsSvgrepoCom,
 } from "../icons";
 import { Row } from "antd";
+import Aos from "aos";
 
 // eslint-disable-next-line react/display-name
 const TechnologiesComp = forwardRef((props, ref) => {
-  const mockData = [
-    {
-      title: "JS",
-      icon: JavascriptSvgrepoCom,
-    },
-    {
-      title: "React",
-      icon: ReactSvgrepoCom,
-    },
-    {
-      title: "Css",
-      icon: Css3SvgrepoCom,
-    },
-    {
-      title: "Git",
-      icon: GitSvgrepoCom,
-    },
-    {
-      title: "Node",
-      icon: NodeJsSvgrepoCom,
-    },
-  ];
-  console.log(mockData, "iiii");
-
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -56,6 +33,9 @@ const TechnologiesComp = forwardRef((props, ref) => {
       opacity: 1,
     },
   };
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
 
   return (
     <Row {...props} ref={ref} id="technologies" className={styles.tech}>
@@ -65,6 +45,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
         dataAousTitle={"fade-right"}
         dataAousDesc={"fade-up-right"}
       />
+
       <motion.ul
         className={styles.container}
         variants={container}
@@ -82,3 +63,50 @@ const TechnologiesComp = forwardRef((props, ref) => {
 });
 
 export default TechnologiesComp;
+
+const mockData = [
+  {
+    title: "JS",
+    icon: JavascriptSvgrepoCom,
+  },
+  {
+    title: "React",
+    icon: ReactSvgrepoCom,
+  },
+  {
+    title: "Css",
+    icon: Css3SvgrepoCom,
+  },
+  {
+    title: "Git",
+    icon: GitSvgrepoCom,
+  },
+  {
+    title: "Node",
+    icon: NodeJsSvgrepoCom,
+  },
+  {
+    title: "Node",
+    icon: NodeJsSvgrepoCom,
+  },
+  {
+    title: "Node",
+    icon: NodeJsSvgrepoCom,
+  },
+  {
+    title: "Node",
+    icon: NodeJsSvgrepoCom,
+  },
+  {
+    title: "Node",
+    icon: NodeJsSvgrepoCom,
+  },
+  {
+    title: "Node",
+    icon: NodeJsSvgrepoCom,
+  },
+  {
+    title: "Node",
+    icon: NodeJsSvgrepoCom,
+  },
+];
