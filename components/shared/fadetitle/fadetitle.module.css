@@ -3,11 +3,17 @@
     margin-bottom: 50px;
 }
 .header{
+    color: black;
     font-size: 3.5rem;
-    /*background: red;*/
     font-family: "Raleway", sans-serif;
     font-weight: 800 !important;
     text-shadow: 20px -20px rgba(0, 0, 0, 0.09);
+}
+.desc{
+    margin-top: -20%;
+    color: #757677;
+    display: flex;
+
 }
 
 @media only screen and  (min-width: 481px) and (max-width: 767px){
@@ -15,44 +21,21 @@
         font-size: 3.5rem;
     }
 
-    .span{
-        top: -15px;
-        left: 0;
-        font-size:3.5rem;
-
-         }
-
-
 }
 @media only screen and  (max-width: 481px){
     .header{
         font-size: 2rem;
     }
-    .span{
-        top: -15px;
-        font-size:2rem;
 
-
+    .desc{
+        margin-top: -10%;
     }
-
 }
 @media (max-width: 480px) {
-
     .header{
         font-size: 2rem;
     }
-    .span {
-        top: -10px;
-        left: 0;
-        font-size: 2rem;
-
-    }
-}
-
-
-.desc{
-    margin-top: -20%;
-    color: #757677;
-    display: flex;
 
 }
+
+

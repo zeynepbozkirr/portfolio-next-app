@@ -9,7 +9,14 @@ const HeaderComp = () => {
       <Col className={styles.logo} offset={1} xs={23} sm={11} md={11} lg={11}>
         <Link href="/">BEKİR YETİM</Link>
       </Col>
-      <Col className={styles.ul} offset={1} xs={23} sm={11} md={11} lg={11}>
+      <Col
+        className={styles.ul}
+        offset={1}
+        xs={{ span: 24, offset: 0 }}
+        sm={11}
+        md={11}
+        lg={11}
+      >
         <Link href="/#technologies" smooth={true}>
           <li>Technologies</li>
         </Link>
