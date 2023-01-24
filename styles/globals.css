@@ -1,7 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hammersmith+One&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Noto+Sans+Chakma&family=Nunito:wght@400;900&family=Passions+Conflict&family=Qwitcher+Grypen&family=Raleway:ital,wght@0,300;1,100&family=Satisfy&family=Sevillana&family=Source+Sans+Pro:ital,wght@1,600;1,900&family=The+Nautigal&family=Yellowtail&display=swap');*/
 
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 body {
   padding: 0;

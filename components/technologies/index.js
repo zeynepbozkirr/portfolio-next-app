@@ -8,31 +8,25 @@ import {
   Css3SvgrepoCom,
   GitSvgrepoCom,
   NodeJsSvgrepoCom,
+  Github,
+  GitlabSvgrepoCom,
+  TailwindSvgrepoCom,
+  PythonSvgrepoCom,
+  MongodbSvgrepoCom,
+  FirebaseSvgrepoCom,
+  SlackSvgrepoCom,
+  PostmanİconSvgrepoCom,
+  TypescriptOfficialSvgrepoCom,
+  ExpoSvgrepoCom,
+  ReduxSvgrepoCom,
+  MobxSvgrepoCom,
+  Html5SvgrepoCom,
 } from "../icons";
-import { Row } from "antd";
+import { Col, Row } from "antd";
 import Aos from "aos";
 
 // eslint-disable-next-line react/display-name
 const TechnologiesComp = forwardRef((props, ref) => {
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemLi = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
   useEffect(() => {
     Aos.init({ duration: 500 });
   }, []);
@@ -46,18 +40,20 @@ const TechnologiesComp = forwardRef((props, ref) => {
         dataAousDesc={"fade-up-right"}
       />
 
-      <motion.ul
-        className={styles.container}
-        variants={container}
-        initial="hidden"
-        animate="visible"
-      >
+      <Row className={styles.container}>
         {mockData.map((item, index) => (
-          <motion.li key={index} variants={itemLi} className={styles.iconitem}>
+          <Col
+            span={2}
+            key={index}
+            data-aos="fade-zoom-in"
+            data-aos-delay={index + "00"}
+            data-aos-duration="100"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <item.icon className={styles.item} />
-          </motion.li>
+          </Col>
         ))}
-      </motion.ul>
+      </Row>
     </Row>
   );
 });
@@ -65,6 +61,10 @@ const TechnologiesComp = forwardRef((props, ref) => {
 export default TechnologiesComp;
 
 const mockData = [
+  {
+    title: "Ts",
+    icon: TypescriptOfficialSvgrepoCom,
+  },
   {
     title: "JS",
     icon: JavascriptSvgrepoCom,
@@ -74,39 +74,65 @@ const mockData = [
     icon: ReactSvgrepoCom,
   },
   {
+    title: "Expo",
+    icon: ExpoSvgrepoCom,
+  },
+  {
+    title: "Redux",
+    icon: ReduxSvgrepoCom,
+  },
+  {
+    title: "Mobx",
+    icon: MobxSvgrepoCom,
+  },
+  {
+    title: "Html",
+    icon: Html5SvgrepoCom,
+  },
+  {
     title: "Css",
     icon: Css3SvgrepoCom,
   },
+
+  {
+    title: "Node",
+    icon: NodeJsSvgrepoCom,
+  },
+
   {
     title: "Git",
     icon: GitSvgrepoCom,
   },
   {
-    title: "Node",
-    icon: NodeJsSvgrepoCom,
+    title: "Github",
+    icon: Github,
   },
   {
-    title: "Node",
-    icon: NodeJsSvgrepoCom,
+    title: "Gitlab",
+    icon: GitlabSvgrepoCom,
   },
   {
-    title: "Node",
-    icon: NodeJsSvgrepoCom,
+    title: "Tailwind",
+    icon: TailwindSvgrepoCom,
   },
   {
-    title: "Node",
-    icon: NodeJsSvgrepoCom,
+    title: "Python",
+    icon: PythonSvgrepoCom,
   },
   {
-    title: "Node",
-    icon: NodeJsSvgrepoCom,
+    title: "Mongodb",
+    icon: MongodbSvgrepoCom,
   },
   {
-    title: "Node",
-    icon: NodeJsSvgrepoCom,
+    title: " Firebase",
+    icon: FirebaseSvgrepoCom,
   },
   {
-    title: "Node",
-    icon: NodeJsSvgrepoCom,
+    title: "Slack",
+    icon: SlackSvgrepoCom,
+  },
+  {
+    title: "Postman",
+    icon: PostmanİconSvgrepoCom,
   },
 ];
