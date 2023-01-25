@@ -17,7 +17,6 @@ const FooterComp = () => {
           offers.
         </Text>
         <a href={`mailto:bekiryetim@gmail.com`}>bekiryetim@gmail.com</a>
-        {/*<a href="#">bekiryetim@gmail.com</a>*/}
 
         <div className={styles.icon}>
           <Github />
