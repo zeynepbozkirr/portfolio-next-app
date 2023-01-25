@@ -1,7 +1,6 @@
 import React, { forwardRef, useEffect } from "react";
 import styles from "./technologies.module.css";
 import FadeTitle from "../shared/fadetitle";
-import { motion } from "framer-motion";
 import {
   JavascriptSvgrepoCom,
   ReactSvgrepoCom,
@@ -25,49 +24,13 @@ import {
 import { Col, Row } from "antd";
 import Aos from "aos";
 
-// eslint-disable-next-line react/display-name
-const TechnologiesComp = forwardRef((props, ref) => {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
-  return (
-    <Row {...props} ref={ref} id="technologies" className={styles.tech}>
-      <FadeTitle
-        title={"TECHNOLOGIES"}
-        description={"Programming languages and tools I use"}
-        dataAousTitle={"fade-right"}
-        dataAousDesc={"fade-up-right"}
-      />
-
-      <Row className={styles.container}>
-        {mockData.map((item, index) => (
-          <Col
-            span={2}
-            key={index}
-            data-aos="fade-zoom-in"
-            data-aos-delay={index + "00"}
-            data-aos-duration="100"
-            data-aos-anchor-placement="bottom-bottom"
-          >
-            <item.icon className={styles.item} />
-            <div>{item.title}</div>
-          </Col>
-        ))}
-      </Row>
-    </Row>
-  );
-});
-
-export default TechnologiesComp;
-
 const mockData = [
   {
-    title: "Ts",
+    title: "TypeScript",
     icon: TypescriptOfficialSvgrepoCom,
   },
   {
-    title: "JS",
+    title: "JavaScript",
     icon: JavascriptSvgrepoCom,
   },
   {
@@ -137,3 +100,40 @@ const mockData = [
     icon: PostmanİconSvgrepoCom,
   },
 ];
+
+// eslint-disable-next-line react/display-name
+const TechnologiesComp = forwardRef((props, ref) => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
+
+  return (
+    <Row {...props} ref={ref} id="technologies" className={styles.tech}>
+      <FadeTitle
+        title={"TECHNOLOGIES"}
+        description={"Programming languages and tools I use"}
+        dataAousTitle={"fade-right"}
+        dataAousDesc={"fade-up-right"}
+      />
+
+      <Row className={styles.container}>
+        {mockData.map((item, index) => (
+          <Col
+            className={styles.item}
+            span={2}
+            key={index}
+            data-aos="fade-zoom-in"
+            data-aos-delay={index + "00"}
+            data-aos-duration="100"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <item.icon className={styles.itemIcon} />
+            <div> {item.title}</div>
+          </Col>
+        ))}
+      </Row>
+    </Row>
+  );
+});
+
+export default TechnologiesComp;

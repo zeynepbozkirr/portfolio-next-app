@@ -3,6 +3,7 @@
 .footer{
     padding-top: 60px;
     background-color: #efefef;
+    padding-bottom: 50px;
 
 }
 .item{
@@ -39,11 +40,14 @@
     font-family: "Raleway", sans-serif;
 }
 
-.item a{
+
+.mail{
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .icon{
@@ -54,11 +58,11 @@
     gap: 2em;
 }
 .end{
-
     display: flex;
     justify-content: center;
     flex-direction:column;
     align-items: center;
+
 }
 .line{
     width: 80%;
@@ -68,9 +72,18 @@
 
 .built{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    text-align: center;
     align-items: center;
     margin-bottom: 10px;
 
 }
+.built a{
+    color: black;
+    font-size: 12px;
+}
 
+.built a:hover{
+    /*color: black;*/
+}

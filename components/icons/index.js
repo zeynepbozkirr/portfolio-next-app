@@ -7,6 +7,7 @@ export { default as GitlabSvgrepoCom } from "./GitlabSvgrepoCom";
 export { default as Html5SvgrepoCom } from "./Html5SvgrepoCom";
 export { default as JavascriptSvgrepoCom } from "./JavascriptSvgrepoCom";
 export { default as Linkedin } from "./Linkedin";
+export { default as MailFilledSvgrepoCom } from "./MailFilledSvgrepoCom";
 export { default as Medium } from "./Medium";
 export { default as MobxSvgrepoCom } from "./MobxSvgrepoCom";
 export { default as MongodbSvgrepoCom } from "./MongodbSvgrepoCom";
