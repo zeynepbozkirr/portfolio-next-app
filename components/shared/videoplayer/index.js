@@ -1,19 +1,23 @@
 import React from "react";
 import { Card } from "antd";
 import HoverVideoPlay from "./videoplayer";
+import styles from "./vieoplayer.module.css";
+
 const { Meta } = Card;
 
 const ProjectCard = () => {
   return (
-    <Card
-      hoverable
-      style={{
-        width: 400,
-      }}
-      cover={<HoverVideoPlay />}
-    >
-      <Meta title="Europe Street beat" description="www.instagram.com" />
-    </Card>
+    <div className={styles.projectCard}>
+      <Card
+        hoverable
+        style={{
+          width: 400,
+        }}
+        cover={<HoverVideoPlay />}
+      >
+        <Meta title="MOBILE APPLICATION" description="MFET " />
+      </Card>
+    </div>
   );
 };
 

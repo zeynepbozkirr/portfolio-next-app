@@ -51,6 +51,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
             data-aos-anchor-placement="bottom-bottom"
           >
             <item.icon className={styles.item} />
+            <div>{item.title}</div>
           </Col>
         ))}
       </Row>
