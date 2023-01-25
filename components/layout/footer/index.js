@@ -42,6 +42,7 @@ const FooterComp = () => {
           <a
             target="_blank"
             href="https://www.linkedin.com/in/zeynep-bozk%C4%B1r-379674194/"
+            rel="noreferrer"
           >
             Zeynep Bozkır
           </a>
