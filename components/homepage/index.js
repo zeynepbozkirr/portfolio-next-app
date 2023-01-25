@@ -3,6 +3,7 @@ import styles from "./home.module.css";
 import { Button, Col, Row, Typography } from "antd";
 import Contact from "./contact";
 import NeumorphismButton from "../shared/buttonNeumorphism";
+import Link from "next/link";
 
 // eslint-disable-next-line react/display-name
 const HomeComp = forwardRef((props, ref) => {
@@ -18,9 +19,10 @@ const HomeComp = forwardRef((props, ref) => {
           into reality quite enjoyable. You can have a closer look at my
           portfolio to see my projects.
         </Text>
-        <div>
+
+        <Link href="/#projects">
           <NeumorphismButton buttonTitle={"My Project"} />
-        </div>
+        </Link>
       </Col>
       <div
         style={{

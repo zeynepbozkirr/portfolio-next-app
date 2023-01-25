@@ -17,13 +17,13 @@ const HeaderComp = () => {
         md={11}
         lg={11}
       >
-        <Link href="/#technologies" smooth={true}>
+        <Link href="/#technologies">
           <li>Technologies</li>
         </Link>
-        <Link href="/#projects" smooth={true}>
+        <Link href="/#projects">
           <li>Projects</li>
         </Link>
-        <Link href="/#blog" spy={true} smooth={true}>
+        <Link href="/#blog">
           <li>Blog</li>
         </Link>
       </Col>

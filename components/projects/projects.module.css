@@ -3,15 +3,16 @@
     background-color: #efefef;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    margin-bottom: 100px;
 }
 .fadleTitle{
     display: flex;
     justify-content: center;
-
+    text-align: center;
 }
+
 .projectCard{
-    gap: 15px;
+    gap: 35px;
     display: flex;
     justify-content: center;
 

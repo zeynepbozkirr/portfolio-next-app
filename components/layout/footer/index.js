@@ -16,7 +16,8 @@ const FooterComp = () => {
           We can collaborate or you can reach out to me for Freelance job
           offers.
         </Text>
-        <a href="#">bekiryetim@gmail.com</a>
+        <a href={`mailto:bekiryetim@gmail.com`}>bekiryetim@gmail.com</a>
+        {/*<a href="#">bekiryetim@gmail.com</a>*/}
 
         <div className={styles.icon}>
           <Github />

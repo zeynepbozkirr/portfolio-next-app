@@ -1,23 +1,20 @@
 import React from "react";
-import { Card } from "antd";
+import { Card, Col, Row, Typography } from "antd";
 import HoverVideoPlay from "./videoplayer";
 import styles from "./vieoplayer.module.css";
 
 const { Meta } = Card;
 
-const ProjectCard = () => {
+const ProjectCard = ({ title, description, link, video }) => {
+  const { Text, Title } = Typography;
   return (
-    <div className={styles.projectCard}>
-      <Card
-        hoverable
-        style={{
-          width: 400,
-        }}
-        cover={<HoverVideoPlay />}
-      >
-        <Meta title="MOBILE APPLICATION" description="MFET " />
-      </Card>
-    </div>
+    <Row className={styles.projectCard}>
+      <HoverVideoPlay link={link} video={video} />
+      <Text style={{ width: "35%" }}>
+        <h3>{title}</h3>
+        {description}
+      </Text>
+    </Row>
   );
 };
 

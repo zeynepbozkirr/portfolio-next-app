@@ -11,7 +11,7 @@ const ProjectComp = () => {
 
   return (
     <Row span={24} id="projects" className={styles.project}>
-      <div className={styles.fadleTitle}>
+      <Col span={24} className={styles.fadleTitle}>
         <FadeTitle
           title={"MY PROJECTS"}
           description={
@@ -20,11 +20,14 @@ const ProjectComp = () => {
           }
           dataAousTitle={"zoom-in-up"}
         />
-      </div>
-      <div className={styles.projectCard}>
-        <ProjectCard />
-        <ProjectCard />
-      </div>
+      </Col>
+      <Col xs={24} sm={24} md={24} lg={12} className={styles.projectCard}>
+        <ProjectCard title={"MFET"} description={"MFET"} />
+      </Col>
+
+      <Col xs={24} sm={24} md={24} lg={12} className={styles.projectCard}>
+        <ProjectCard title={"MFET"} description={"MFET"} />
+      </Col>
     </Row>
   );
 };

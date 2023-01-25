@@ -28,12 +28,7 @@ const BlogPost = ({ item, direction }) => {
           </Text>
           <h5 className={styles.title}> {item.title}</h5>
           <Col className={styles.descCol}>
-            <Text
-              // ellipsis={true}
-              className={styles.desc}
-            >
-              {item.description}
-            </Text>
+            <Text className={styles.desc}>{item.description}</Text>
           </Col>
         </Col>
       </Col>

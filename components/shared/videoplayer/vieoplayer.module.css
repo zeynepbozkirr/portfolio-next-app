@@ -1,4 +1,22 @@
 .projectCard{
+    /*width:280px;*/
+    /*height: 500px;*/
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.videoPlayer{
+    /*height: 500px;*/
+    width:280px;
+
+}
+
+.hoverOverlay{
+    display: flex;
+    justify-content: space-between;
+    /*background: #0087ca;*/
+    align-items: center;
+    height: 100%;
 
 }
