@@ -14,7 +14,7 @@ const Contact = () => {
     medium: false,
   });
 
-  const { Paragraph, Text } = Typography;
+  const { Text } = Typography;
 
   const changeHover = (selected, value) => {
     if (selected === "github") {
@@ -36,7 +36,7 @@ const Contact = () => {
       >
         {hoverValue.github ? (
           <div className={styles.iconArea}>
-            <Github className={styles.icon} />
+            <Github />
           </div>
         ) : (
           <div>
@@ -53,7 +53,7 @@ const Contact = () => {
       >
         {hoverValue.linkedin ? (
           <div className={styles.iconArea}>
-            <Linkedin className={styles.icon} />
+            <Linkedin />
           </div>
         ) : (
           <div>
@@ -70,7 +70,7 @@ const Contact = () => {
       >
         {hoverValue.medium ? (
           <div className={styles.iconArea}>
-            <Medium className={styles.icon} />
+            <Medium />
           </div>
         ) : (
           <div>

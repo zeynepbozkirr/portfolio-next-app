@@ -8,6 +8,7 @@ import {
   Medium,
   Stackoverflow,
 } from "../../icons";
+import Link from "next/link";
 
 const FooterComp = () => {
   const { Text } = Typography;
@@ -15,7 +16,7 @@ const FooterComp = () => {
     <div className={styles.footer}>
       <div className={styles.item}>
         <div className={styles.titleItem}>
-          <Text className={styles.title}>Let work together!</Text>
+          <Text className={styles.title}>Let {`'`}s work together!</Text>
         </div>
 
         <Text className={styles.description}>
@@ -25,14 +26,23 @@ const FooterComp = () => {
 
         <a href={`mailto:bekiryetim@gmail.com`} className={styles.mail}>
           <MailFilledSvgrepoCom />
-          <Text>bekiryetim@gmail.com</Text>
+          <Text>bekir.yetim.06@gmail.com</Text>
         </a>
 
         <div className={styles.icon}>
-          <Github />
-          <Linkedin />
-          <Medium />
-          <Stackoverflow />
+          <Link href="https://github.com/bekirytmhttps://github.com/bekirytm">
+            <Github />
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/bekir-yetim-7b00b3181/">
+            <Linkedin />
+          </Link>
+          <Link href="https://medium.com/@bekir.ytm">
+            <Medium />
+          </Link>
+          <Link href="https://github.com/bekirytmhttps://github.com/bekirytm">
+            <Stackoverflow />
+          </Link>
         </div>
       </div>
       <div className={styles.end}>

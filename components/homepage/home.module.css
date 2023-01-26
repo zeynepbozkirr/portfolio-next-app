@@ -92,15 +92,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100px;
-    /*height: 100px;*/
     cursor: pointer;
     transition: 0.5s;
 }
-.Link:hover{
 
-}
 .Link::before{
     content: "";
     position: absolute;
@@ -119,34 +115,14 @@
     z-index: -1;
 }
 
-.icon{
-    color:#777;
-    font-size: 1.75em;
-    transition: 0.5s;
-    transition-delay: 0.25s;
-}
-
-.icon:hover{
-    transform: rotateY(180deg);
-}
-
-
 .text{
     font-weight: bold;
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transform: scale(0);
     transition: 0.5s;
     transition-delay: 0s;
 }
-.text:hover{
-    transform: scale(1);
-    transition-delay: 0.25s;
-}
+
 
 .iconArea {
-
     display: flex;
     justify-content: center;
     align-items: center;

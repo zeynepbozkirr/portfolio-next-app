@@ -38,6 +38,10 @@ const mockData = [
     icon: ReactSvgrepoCom,
   },
   {
+    title: "React-Native",
+    icon: ReactSvgrepoCom,
+  },
+  {
     title: "Expo",
     icon: ExpoSvgrepoCom,
   },
@@ -50,16 +54,16 @@ const mockData = [
     icon: MobxSvgrepoCom,
   },
   {
-    title: "Html",
+    title: "Html5",
     icon: Html5SvgrepoCom,
   },
   {
-    title: "Css",
+    title: "Css3",
     icon: Css3SvgrepoCom,
   },
 
   {
-    title: "Node",
+    title: "NodeJS",
     icon: NodeJsSvgrepoCom,
   },
 
@@ -108,7 +112,16 @@ const TechnologiesComp = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <Row {...props} ref={ref} id="technologies" className={styles.tech}>
+    <Row
+      {...props}
+      ref={ref}
+      id="technologies"
+      className={styles.tech}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
       <FadeTitle
         title={"TECHNOLOGIES"}
         description={"Programming languages and tools I use"}
@@ -116,7 +129,13 @@ const TechnologiesComp = forwardRef((props, ref) => {
         dataAousDesc={"fade-up-right"}
       />
 
-      <Row className={styles.container}>
+      <Row
+        className={styles.container}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         {mockData.map((item, index) => (
           <Col
             className={styles.item}
