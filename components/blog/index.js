@@ -6,6 +6,15 @@ import { Col, Row, Typography } from "antd";
 
 // eslint-disable-next-line react/display-name
 const BlogComp = forwardRef((props, ref) => {
+  const fetchMediumData = () => {
+    fetch("https://api.medium.com/v1/me")
+      .then((response) => response.json())
+      .then((data) => console.log(data, "data"));
+  };
+  useEffect(() => {
+    fetchMediumData();
+  }, []);
+
   return (
     <Row id="blog" ref={ref} className={styles.blog}>
       <FadeTitle

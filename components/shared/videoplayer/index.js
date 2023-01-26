@@ -1,20 +1,30 @@
 import React from "react";
-import { Card, Col, Row, Typography } from "antd";
-import HoverVideoPlay from "./videoplayer";
+import { Button, Card, Col, Row, Typography } from "antd";
 import styles from "./vieoplayer.module.css";
 
 const { Meta } = Card;
 
-const ProjectCard = ({ title, description, link, video }) => {
-  const { Text, Title } = Typography;
+const ProjectCard = ({ title, description, linkPlay, linkApp, photo }) => {
   return (
-    <Row className={styles.projectCard}>
-      <HoverVideoPlay link={link} video={video} />
-      <Text style={{ width: "35%" }}>
-        <h3>{title}</h3>
-        {description}
-      </Text>
-    </Row>
+    <Col>
+      <Col className={styles.cardItem}>
+        <img alt={title} src={photo} className={styles.image} />
+        <Col className={styles.imagebutton}>
+          <a href={linkApp} className={styles.store}>
+            APP STORE
+          </a>
+          <a href={linkPlay} className={styles.store}>
+            PLAY STORE
+          </a>
+        </Col>
+      </Col>
+
+      <Meta
+        style={{ color: "#757677" }}
+        title={title}
+        description={description}
+      />
+    </Col>
   );
 };
 

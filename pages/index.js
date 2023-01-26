@@ -16,12 +16,6 @@ export default function Home() {
   const techInView = useInView(techRef);
   const blogInview = useInView(blogRef);
 
-  useEffect(() => {
-    console.log(homeInView, "HOME");
-    console.log(techInView, "TECH");
-    console.log(blogInview, "blog");
-  }, [homeInView, techInView, blogInview]);
-
   return (
     <Row className={styles.container}>
       <Col span={24}>

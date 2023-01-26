@@ -1,9 +1,7 @@
 import React from "react";
-import MotionTitle from "../shared/motiontitle";
 import FadeTitle from "../shared/fadetitle";
 import styles from "./projects.module.css";
 import { Card, Col, Row } from "antd";
-import HoverVideoPlay from "../shared/videoplayer/videoplayer";
 import ProjectCard from "../shared/videoplayer";
 
 const ProjectComp = () => {
@@ -22,11 +20,25 @@ const ProjectComp = () => {
         />
       </Col>
       <Col xs={24} sm={24} md={24} lg={12} className={styles.projectCard}>
-        <ProjectCard title={"MFET"} description={"MFET"} />
+        <ProjectCard
+          linkPlay={""}
+          linkApp={"https://apps.apple.com/tr/app/mfet/id1645084642"}
+          title={"MFET"}
+          description={"Mobile Application"}
+          photo={"mfet.jpeg"}
+        />
       </Col>
 
       <Col xs={24} sm={24} md={24} lg={12} className={styles.projectCard}>
-        <ProjectCard title={"MFET"} description={"MFET"} />
+        <ProjectCard
+          linkPlay={""}
+          linkApp={
+            "https://apps.apple.com/tr/app/chary-on-top/id1620327753?l=tr"
+          }
+          title={"Chary On Top"}
+          description={"Mobile Application"}
+          photo={"charyontop.jpeg"}
+        />
       </Col>
     </Row>
   );

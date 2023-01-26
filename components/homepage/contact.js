@@ -32,7 +32,7 @@ const Contact = () => {
         className={styles.Link}
         onMouseEnter={() => changeHover("github", true)}
         onMouseLeave={() => changeHover("github", false)}
-        href="https://github.com/bekirytm"
+        href="https://github.com/bekirytmhttps://github.com/bekirytm"
       >
         {hoverValue.github ? (
           <div className={styles.iconArea}>
@@ -49,7 +49,7 @@ const Contact = () => {
         className={styles.Link}
         onMouseEnter={() => changeHover("linkedin", true)}
         onMouseLeave={() => changeHover("linkedin", false)}
-        href="https://github.com/bekirytm"
+        href="https://www.linkedin.com/in/bekir-yetim-7b00b3181/"
       >
         {hoverValue.linkedin ? (
           <div className={styles.iconArea}>
@@ -66,7 +66,7 @@ const Contact = () => {
         className={styles.Link}
         onMouseEnter={() => changeHover("medium", true)}
         onMouseLeave={() => changeHover("medium", false)}
-        href="https://github.com/bekirytm"
+        href="https://medium.com/@bekir.ytm"
       >
         {hoverValue.medium ? (
           <div className={styles.iconArea}>

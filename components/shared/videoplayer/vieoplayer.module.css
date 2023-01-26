@@ -1,22 +1,46 @@
-.projectCard{
-    /*width:280px;*/
-    /*height: 500px;*/
+
+/*.card{*/
+/*    width: 340px;*/
+/*}*/
+.cardItem{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.videoPlayer{
-    /*height: 500px;*/
-    width:280px;
+    width: 340px;
+
 
 }
-
-.hoverOverlay{
+.image{
+    width: 100%;
+    height: 240px;
+    /*opacity: 0.4;*/
+}
+.imagebutton{
     display: flex;
-    justify-content: space-between;
-    /*background: #0087ca;*/
+    position: absolute;
+    gap:140px;
+    bottom: 40px;
+    color: #ebeef1;
+}
+.store{
+    display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    background: black;
+    border-radius: 6px;
+    visibility: hidden;
+    color: #EDF1EE;
 
+}
+.cardItem:hover{
+    background: linear-gradient( rgba(218, 218, 227, 0.09), rgba(9, 9, 75, 0.4))
+}
+.cardItem:hover .image{
+    opacity: 0.8;
+}
+.cardItem:hover .store{
+    visibility: visible;
 }
