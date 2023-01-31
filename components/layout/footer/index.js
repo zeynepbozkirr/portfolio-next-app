@@ -30,7 +30,7 @@ const FooterComp = () => {
         </a>
 
         <div className={styles.icon}>
-          <Link href="https://github.com/bekirytmhttps://github.com/bekirytm">
+          <Link href="https://github.com/bekirytm">
             <Github />
           </Link>
 
@@ -40,7 +40,7 @@ const FooterComp = () => {
           <Link href="https://medium.com/@bekir.ytm">
             <Medium />
           </Link>
-          <Link href="https://github.com/bekirytmhttps://github.com/bekirytm">
+          <Link href="https://stackoverflow.com/users/12003912/bekirytm">
             <Stackoverflow />
           </Link>
         </div>

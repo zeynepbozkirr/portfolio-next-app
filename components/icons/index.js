@@ -1,3 +1,4 @@
+export { default as AppstoreSvgrepoCom } from "./AppstoreSvgrepoCom";
 export { default as Css3SvgrepoCom } from "./Css3SvgrepoCom";
 export { default as ExpoSvgrepoCom } from "./ExpoSvgrepoCom";
 export { default as FirebaseSvgrepoCom } from "./FirebaseSvgrepoCom";
@@ -12,6 +13,7 @@ export { default as Medium } from "./Medium";
 export { default as MobxSvgrepoCom } from "./MobxSvgrepoCom";
 export { default as MongodbSvgrepoCom } from "./MongodbSvgrepoCom";
 export { default as NodeJsSvgrepoCom } from "./NodeJsSvgrepoCom";
+export { default as PlaystoreSvgrepoCom } from "./PlaystoreSvgrepoCom";
 export { default as PostmanİconSvgrepoCom } from "./PostmanİconSvgrepoCom";
 export { default as PythonSvgrepoCom } from "./PythonSvgrepoCom";
 export { default as ReactSvgrepoCom } from "./ReactSvgrepoCom";

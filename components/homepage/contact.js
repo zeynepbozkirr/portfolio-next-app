@@ -3,7 +3,6 @@ import styles from "./home.module.css";
 import Github from "../../public/github.svg";
 import Linkedin from "../../public/linkedin.svg";
 import Medium from "../../public/medium.svg";
-import Stackoverflow from "../../public/stackoverflow.svg";
 import Link from "next/link";
 import { Typography } from "antd";
 
@@ -32,7 +31,7 @@ const Contact = () => {
         className={styles.Link}
         onMouseEnter={() => changeHover("github", true)}
         onMouseLeave={() => changeHover("github", false)}
-        href="https://github.com/bekirytmhttps://github.com/bekirytm"
+        href="https://github.com/bekirytm"
       >
         {hoverValue.github ? (
           <div className={styles.iconArea}>

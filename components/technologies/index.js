@@ -72,15 +72,15 @@ const mockData = [
     icon: GitSvgrepoCom,
   },
   {
-    title: "Github",
+    title: "GitHub",
     icon: Github,
   },
   {
-    title: "Gitlab",
+    title: "GitLab",
     icon: GitlabSvgrepoCom,
   },
   {
-    title: "Tailwind",
+    title: "Tailwind CSS",
     icon: TailwindSvgrepoCom,
   },
   {
@@ -88,7 +88,7 @@ const mockData = [
     icon: PythonSvgrepoCom,
   },
   {
-    title: "Mongodb",
+    title: "MongoDb",
     icon: MongodbSvgrepoCom,
   },
   {
@@ -112,16 +112,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <Row
-      {...props}
-      ref={ref}
-      id="technologies"
-      className={styles.tech}
-      style={{
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
+    <Row {...props} ref={ref} id="technologies" className={styles.tech}>
       <FadeTitle
         title={"TECHNOLOGIES"}
         description={"Programming languages and tools I use"}
@@ -129,13 +120,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
         dataAousDesc={"fade-up-right"}
       />
 
-      <Row
-        className={styles.container}
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <Row className={styles.container}>
         {mockData.map((item, index) => (
           <Col
             className={styles.item}
@@ -147,7 +132,7 @@ const TechnologiesComp = forwardRef((props, ref) => {
             data-aos-anchor-placement="bottom-bottom"
           >
             <item.icon className={styles.itemIcon} />
-            <div> {item.title}</div>
+            <div className={styles.itemTitle}> {item.title}</div>
           </Col>
         ))}
       </Row>

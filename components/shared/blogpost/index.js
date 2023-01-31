@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Animate } from "react-move";
-import { easeExpOut, easeBackOut } from "d3-ease";
 import { Button, Col, Row, Typography } from "antd";
 import styles from "./blogpost.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import NeumorphismButton from "../buttonNeumorphism";
+import Link from "next/link";
+import parse from "html-react-parser";
 
 const BlogPost = ({ item, direction }) => {
   const { Text, Title } = Typography;
@@ -21,20 +20,29 @@ const BlogPost = ({ item, direction }) => {
       data-aos-anchor-placement="bottom-bottom"
       className={styles.container}
     >
-      <Col xs={24} sm={24} md={20} lg={20} classNmae={styles.colDate}>
+      <Col xs={24} sm={24} md={20} lg={20} className={styles.colDate}>
         <Col style={{ width: "100%" }}>
-          <Text className={styles.date}>
-            {item.date} - {item.topic}
-          </Text>
+          <Text className={styles.date}>{item.pubDate}</Text>
           <h5 className={styles.title}> {item.title}</h5>
-          <Col className={styles.descCol}>
-            <Text className={styles.desc}>{item.description}</Text>
+          <Col
+            key={item.link}
+            className={styles.descCol}
+            xs={24}
+            sm={24}
+            md={10}
+            lg={10}
+          >
+            <Text className={styles.desc}>{item.categories[0]},</Text>
+            <Text className={styles.desc}>{item.categories[1]},</Text>
+            <Text className={styles.desc}>{item.categories[2]}</Text>
           </Col>
         </Col>
       </Col>
 
       <Col xs={24} sm={24} md={4} lg={4} className={styles.moreButtonCol}>
-        <Button className={styles.moreButton}>MORE</Button>
+        <Link href={item.link}>
+          <Button className={styles.moreButton}>MORE</Button>
+        </Link>
       </Col>
     </Row>
   );

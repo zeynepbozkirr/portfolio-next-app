@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import styles from "./blog.module.css";
 import FadeTitle from "../shared/fadetitle";
 import BlogPost from "../shared/blogpost";
@@ -6,14 +6,23 @@ import { Col, Row, Typography } from "antd";
 
 // eslint-disable-next-line react/display-name
 const BlogComp = forwardRef((props, ref) => {
+  const [posts, setPosts] = useState("");
+
   const fetchMediumData = () => {
-    fetch("https://api.medium.com/v1/me")
-      .then((response) => response.json())
-      .then((data) => console.log(data, "data"));
+    fetch(
+      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@bekir.ytm"
+    )
+      .then((response) => response.text())
+      .then((result) => {
+        setPosts(JSON.parse(result));
+      })
+      .catch((error) => console.log("error", error));
   };
+
   useEffect(() => {
     fetchMediumData();
   }, []);
+  console.log(posts.items, "post");
 
   return (
     <Row id="blog" ref={ref} className={styles.blog}>
@@ -27,7 +36,7 @@ const BlogComp = forwardRef((props, ref) => {
       />
 
       <div style={{ marginBottom: 100, width: "100%" }}>
-        {data.map((item, index) => {
+        {posts.items?.map((item, index) => {
           return (
             <BlogPost
               key={index}

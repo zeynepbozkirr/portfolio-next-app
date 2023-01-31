@@ -12,9 +12,11 @@
     text-shadow: 20px -20px rgba(0, 0, 0, 0.09);
 }
 .desc{
+    display: flex;
+    text-align: center;
+     justify-content: center;
     margin-top: -20%;
     color: #757677;
-    display: flex;
 
 }
 

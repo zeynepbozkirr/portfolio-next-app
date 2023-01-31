@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Card, Col, Row, Typography } from "antd";
 import styles from "./vieoplayer.module.css";
+import SvgAppstoreSvgrepoCom from "../../icons/AppstoreSvgrepoCom";
+import PlaystoreSvgrepoCom from "../../icons/PlaystoreSvgrepoCom";
 
 const { Meta } = Card;
 
@@ -11,10 +13,10 @@ const ProjectCard = ({ title, description, linkPlay, linkApp, photo }) => {
         <img alt={title} src={photo} className={styles.image} />
         <Col className={styles.imagebutton}>
           <a href={linkApp} className={styles.store}>
-            APP STORE
+            <SvgAppstoreSvgrepoCom className={styles.icon} />
           </a>
           <a href={linkPlay} className={styles.store}>
-            PLAY STORE
+            <PlaystoreSvgrepoCom />
           </a>
         </Col>
       </Col>
