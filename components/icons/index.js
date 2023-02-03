@@ -14,6 +14,7 @@ export { default as MobxSvgrepoCom } from "./MobxSvgrepoCom";
 export { default as MongodbSvgrepoCom } from "./MongodbSvgrepoCom";
 export { default as NodeJsSvgrepoCom } from "./NodeJsSvgrepoCom";
 export { default as PlaystoreSvgrepoCom } from "./PlaystoreSvgrepoCom";
+export { default as PlaystoreSvgrepo } from "./PlaystoreSvgrepo";
 export { default as PostmanİconSvgrepoCom } from "./PostmanİconSvgrepoCom";
 export { default as PythonSvgrepoCom } from "./PythonSvgrepoCom";
 export { default as ReactSvgrepoCom } from "./ReactSvgrepoCom";

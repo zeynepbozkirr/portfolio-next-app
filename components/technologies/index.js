@@ -124,7 +124,9 @@ const TechnologiesComp = forwardRef((props, ref) => {
         {mockData.map((item, index) => (
           <Col
             className={styles.item}
-            span={2}
+            offset={1}
+            span={1}
+            xs={{ span: 2 }}
             key={index}
             data-aos="fade-zoom-in"
             data-aos-delay={index + "00"}

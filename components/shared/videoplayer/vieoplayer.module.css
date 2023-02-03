@@ -1,58 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hammersmith+One&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Noto+Sans+Chakma&family=Nunito:wght@400;900&family=Passions+Conflict&family=Qwitcher+Grypen&family=Satisfy&family=Sevillana&family=Source+Sans+Pro:ital,wght@1,600;1,900&family=The+Nautigal&family=Yellowtail&display=swap');
 
-/*.card{*/
-/*    width: 340px;*/
-/*}*/
+
 .cardItem{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*width: 100%;*/
-    width: 345px;
-
-
+    width: 400px;
 }
 .image{
     width: 100%;
+    border-radius: 0.5rem;
 }
 .imagebutton{
     display: flex;
     position: absolute;
     gap:15px;
     bottom: 15px;
+    width: 100%;
 }
+
+
 .store{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:100px;
+    width:90%;
     height: 35px;
     background: blue;
     visibility: hidden;
     font-weight: 600;
     text-align: center;
-    /*padding: 1.3rem;*/
     border-radius: 0.5rem;
     margin: 0 0.8rem;
-    transition: 500ms all;
-    /*color: #ebeef1;*/
-
 }
 .cardItem:hover{
+    border-radius: 0.5rem;
+
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(17, 0, 255, 0.388) 100%);
-    transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
-    cursor: pointer;
 }
 .cardItem:hover .image{
     opacity: 0.8;
+
 }
 .cardItem:hover .store{
     visibility: visible;
 }
 .store:hover{
+
     color: white;
-    background: #191b1d;
+    background:black;
 }
+
 .icon{
-    fill: white;
+    fill: white  !important;
+    width: 1.3rem;
+    height: 2rem;
+}
+.oneIcon{
+    fill: white  !important;
+    width: 1.3rem;
+    height: 2rem;
+}
+
+.description{
+    color: #757677;
+    font-size: 13px;
+    font-family: "Raleway", sans-serif;
+
+
+
 }
