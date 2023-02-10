@@ -22,7 +22,7 @@ const HeaderComp = () => {
         </Link>
       </Col>
       <Col offset={1} xs={1} sm={1} md={1} lg={1}>
-        <Link href="https://new-blog-h4t4z8ini-bozkrzeynep-gmailcom.vercel.app/">
+        <Link href="https://new-blog-alpha-taupe.vercel.app/">
           <BlogWritingSvgrepoCom />
         </Link>
       </Col>

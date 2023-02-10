@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hammersmith+One&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Noto+Sans+Chakma&family=Nunito:wght@400;900&family=Passions+Conflict&family=Qwitcher+Grypen&family=Satisfy&family=Sevillana&family=Source+Sans+Pro:ital,wght@1,600;1,900&family=The+Nautigal&family=Yellowtail&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Hammersmith+One&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Noto+Sans+Chakma&family=Nunito:wght@400;900&family=Open+Sans:wght@300;400&family=Passions+Conflict&family=Qwitcher+Grypen&family=Raleway:wght@400;500;600;700;900&family=Satisfy&family=Sevillana&family=Source+Sans+Pro:ital,wght@1,600;1,900&family=The+Nautigal&family=Yellowtail&display=swap');
 .home{
     padding-top: 80px;
     width: 100%;
@@ -21,7 +20,7 @@
 }
 
 .name{
-    font-family: "Qwitcher Grypen", cursive !important;
+    font-family: "Qwitcher Grypen", cursive ;
     font-size: 5rem !important;
     display: flex !important;
     line-height:1.3 !important;
@@ -47,7 +46,7 @@
 
 @media only screen and (max-width: 622px) {
     .name {
-        font-family: "Qwitcher Grypen", cursive !important;
+        font-family: "Qwitcher Grypen", cursive;
         font-size:2.4rem;
         display: flex;
     }
