@@ -30,8 +30,7 @@ const BlogComp = forwardRef((props, ref) => {
         dataAousTitle={"zoom-in-up"}
         title={"BLOG"}
         description={
-          "I am researching and writing articles on the topics that I am curious about.\n" +
-          "\n"
+          "I am researching on the topics that I am curious about.\n" + "\n"
         }
       />
 

@@ -15,9 +15,10 @@ const HomeComp = forwardRef((props, ref) => {
         <Text className={styles.name}>Bekir Yetim</Text>
         <Text className={styles.job}> FRONTEND DEVELOPER</Text>
         <Text className={styles.explan}>
-          Hello, I am Bekir. I find the process of designing and coding an idea
-          into reality quite enjoyable. You can have a closer look at my
-          portfolio to see my projects.
+          Hello, I started my software adventure with the department I studied
+          at 9 Eylül University. I am currently 24 years old and have 3 years of
+          working experience. I want to continue as a full stack developer in
+          the next period of my career.
         </Text>
 
         <Link href="/#projects">

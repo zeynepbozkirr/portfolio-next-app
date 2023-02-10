@@ -7,25 +7,27 @@
     justify-content: center;
     align-items: center;
     width: 400px;
+
 }
 .image{
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px rgba(0 ,0 ,0 , 0.02);
 }
 .imagebutton{
     display: flex;
+    justify-content: space-evenly;
     position: absolute;
     gap:15px;
     bottom: 15px;
     width: 100%;
 }
 
-
 .store{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:90%;
+    width:35%;
     height: 35px;
     background: blue;
     visibility: hidden;
@@ -35,19 +37,19 @@
     margin: 0 0.8rem;
 }
 .cardItem:hover{
-    border-radius: 0.5rem;
-
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(17, 0, 255, 0.388) 100%);
+    border-radius: 1.1rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0),
+    rgba(17, 0, 255, 0.1) );
 }
 .cardItem:hover .image{
     opacity: 0.8;
-
 }
+
 .cardItem:hover .store{
     visibility: visible;
 }
-.store:hover{
 
+.store:hover{
     color: white;
     background:black;
 }
@@ -64,10 +66,10 @@
 }
 
 .description{
+    margin-bottom: 60px;
+    margin-top: 25px;
+    line-height: 25px;
     color: #757677;
     font-size: 13px;
     font-family: "Raleway", sans-serif;
-
-
-
 }

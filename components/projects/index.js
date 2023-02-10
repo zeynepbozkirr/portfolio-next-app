@@ -9,24 +9,28 @@ import PlaystoreSvgrepo from "../icons/PlaystoreSvgrepoCom";
 const projectData = [
   {
     title: "MFET",
-    linkPlay: "",
-    linkApp: 'https://apps.apple.com/tr/app/mfet/id1645084642"',
+    linkPlay:
+      "https://play.google.com/store/apps/details?id=earth.mfet.app.android&hl=en_US&gl=US",
+    linkApp: 'https://apps.apple.com/tr/app/mfet/id1645084642?l=tr"',
     description: "Mobile Application",
     photo: "mfet.jpeg",
   },
   {
     title: "Chary On Top",
-    linkPlay: "",
+    linkPlay:
+      "https://play.google.com/store/apps/details?id=com.smartpotato.charyontop&hl=en_US&gl=US",
     linkApp: "https://apps.apple.com/tr/app/chary-on-top/id1620327753?l=tr",
     description: "Mobile Application",
     photo: "charyontop.jpeg",
   },
   {
     title: "FIG",
-    linkPlay: "",
-    linkApp: "https://apps.apple.com/tr/app/chary-on-top/id1620327753?l=tr",
+    linkPlay:
+      "https://play.google.com/store/apps/details?id=online.figcoin.figvault&hl=en&gl=US",
+    linkApp:
+      "https://play.google.com/store/apps/details?id=online.figcoin.figvault&hl=en&gl=US",
     description: "Mobile Application",
-    photo: "fig.png",
+    photo: "fig.jpeg",
   },
 ];
 
@@ -38,10 +42,7 @@ const ProjectComp = () => {
       <Col span={24} className={styles.fadleTitle}>
         <FadeTitle
           title={"MY PROJECTS"}
-          description={
-            "You can review the projects and applications I have developed.\n" +
-            "\n"
-          }
+          description={"You can review applications I have developed.\n" + "\n"}
           dataAousTitle={"zoom-in-up"}
         />
       </Col>

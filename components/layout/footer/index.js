@@ -57,9 +57,7 @@ const FooterComp = () => {
             Zeynep Bozkır
           </a>
         </Text>
-        <Text className={styles.built}>
-          You can access the source codes of this website on Github.
-        </Text>
+        <Text className={styles.built}>2023</Text>
       </div>
     </div>
   );
