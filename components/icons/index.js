@@ -1,4 +1,5 @@
 export { default as AppstoreSvgrepoCom } from "./AppstoreSvgrepoCom";
+export { default as BlogWritingSvgrepoCom } from "./BlogWritingSvgrepoCom";
 export { default as Css3SvgrepoCom } from "./Css3SvgrepoCom";
 export { default as ExpoSvgrepoCom } from "./ExpoSvgrepoCom";
 export { default as FirebaseSvgrepoCom } from "./FirebaseSvgrepoCom";
