@@ -21,7 +21,7 @@
 }
 
 .name{
-    font-family: 'Qwitcher Grypen' !important;
+    font-family: "Qwitcher Grypen", cursive !important;
     font-size: 5rem !important;
     display: flex !important;
     line-height:1.3 !important;
@@ -47,7 +47,7 @@
 
 @media only screen and (max-width: 622px) {
     .name {
-        font-family: 'Qwitcher Grypen' !important;
+        font-family: "Qwitcher Grypen", cursive !important;
         font-size:2.4rem;
         display: flex;
     }
