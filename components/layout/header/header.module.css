@@ -32,6 +32,7 @@
 
 }
 
+
 @media only screen and  (max-width: 767px){
     .ul{
         display: flex;
@@ -69,4 +70,10 @@
 .navbar a:hover{
     color: black !important;
 
+}
+
+@media only screen and (max-width: 576px){
+    .blogIcon{
+        visibility: hidden;
+    }
 }

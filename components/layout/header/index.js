@@ -21,7 +21,7 @@ const HeaderComp = () => {
           <li>Blog</li>
         </Link>
       </Col>
-      <Col offset={1} xs={1} sm={1} md={1} lg={1}>
+      <Col offset={1} xs={1} sm={1} md={1} lg={1} className={styles.blogIcon}>
         <Link href="https://new-blog-alpha-taupe.vercel.app/">
           <BlogWritingSvgrepoCom />
         </Link>

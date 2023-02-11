@@ -4,14 +4,20 @@ import { Button, Col, Row, Typography } from "antd";
 import Contact from "./contact";
 import NeumorphismButton from "../shared/buttonNeumorphism";
 import Link from "next/link";
-
 // eslint-disable-next-line react/display-name
 const HomeComp = forwardRef((props, ref) => {
   const { Paragraph, Text } = Typography;
 
   return (
     <Row ref={ref} className={styles.home}>
-      <Col className={styles.homeAbout} offset={1} span={16}>
+      <Col
+        className={styles.homeAbout}
+        offset={2}
+        xs={24}
+        sm={24}
+        md={12}
+        lg={12}
+      >
         <Text className={styles.name}>Bekir Yetim</Text>
         <Text className={styles.job}> FRONTEND DEVELOPER</Text>
         <Text className={styles.explan}>
